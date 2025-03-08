@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
   console.log("DOM loaded, initializing language system");
   
+  // Set up FAQ dropdowns
+  setupFaqDropdowns();
+  
   // Elements that need translation
   const translatableElements = {
     'title': document.querySelector('title'),
@@ -14,7 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
     'solution-items': document.querySelectorAll('.solution li'),
     'quote': document.querySelector('.quote p'),
     'faq-title': document.querySelector('.faq h2'),
-    'faq-items': document.querySelectorAll('.faq-item')
+    'faq-questions': document.querySelectorAll('.faq-question strong'),
+    'faq-answers': document.querySelectorAll('.faq-answer p')
   };
   
   // Get language buttons
@@ -45,6 +49,42 @@ document.addEventListener('DOMContentLoaded', function() {
       translatePage(lang);
     });
   });
+  
+  // Set up FAQ dropdowns with improved performance
+  function setupFaqDropdowns() {
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+      question.addEventListener('click', function() {
+        const faqItem = this.parentElement;
+        const faqAnswer = faqItem.querySelector('.faq-answer');
+        
+        // If this item is already active and we're closing it
+        if (faqItem.classList.contains('active')) {
+          // Set a specific height before collapsing to improve animation
+          const height = faqAnswer.scrollHeight;
+          faqAnswer.style.maxHeight = height + 'px';
+          
+          // Force reflow
+          faqAnswer.offsetHeight;
+          
+          // Then set to 0
+          setTimeout(() => {
+            faqAnswer.style.maxHeight = '0px';
+            
+            // Remove active class after animation completes
+            setTimeout(() => {
+              faqItem.classList.remove('active');
+              faqAnswer.style.maxHeight = '';
+            }, 300);
+          }, 10);
+        } else {
+          // Opening the item
+          faqItem.classList.add('active');
+        }
+      });
+    });
+  }
   
   // Set the active language button
   function setActiveLanguage(lang) {
@@ -98,16 +138,17 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // Update FAQ section
       translatableElements['faq-title'].textContent = translations[lang].faqTitle;
-      translatableElements['faq-items'].forEach((item, index) => {
+      
+      // Update FAQ questions and answers
+      translatableElements['faq-questions'].forEach((question, index) => {
         if (translations[lang].faqItems[index]) {
-          const faqData = translations[lang].faqItems[index];
-          const questionElement = item.querySelector('strong');
-          const answerElement = item.querySelector('p');
-          
-          if (questionElement && answerElement) {
-            questionElement.textContent = faqData.question;
-            answerElement.innerHTML = faqData.answer;
-          }
+          question.textContent = translations[lang].faqItems[index].question;
+        }
+      });
+      
+      translatableElements['faq-answers'].forEach((answer, index) => {
+        if (translations[lang].faqItems[index]) {
+          answer.innerHTML = translations[lang].faqItems[index].answer;
         }
       });
       
