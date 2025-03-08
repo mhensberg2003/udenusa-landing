@@ -23,7 +23,7 @@ const translations = {
     ],
     
     // Quote
-    quote: "\"Stem med din pung. Hver krone tæller.\"",
+    quote: "\"Hjælp os mindske vores afhængighed af USA.\"",
     
     // FAQ section
     faqTitle: "Ofte stillede spørgsmål",
@@ -83,7 +83,7 @@ const translations = {
     ],
     
     // Quote
-    quote: "\"Vote with your wallet. Every penny counts.\"",
+    quote: "\"Help us reduce our dependence on the US.\"",
     
     // FAQ section
     faqTitle: "Frequently Asked Questions",
