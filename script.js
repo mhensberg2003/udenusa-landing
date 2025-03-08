@@ -152,6 +152,12 @@ document.addEventListener('DOMContentLoaded', function() {
         }
       });
       
+      // Update privacy policy link in footer
+      const privacyLink = document.querySelector('footer .privacy-link');
+      if (privacyLink) {
+        privacyLink.textContent = lang === 'da' ? 'Privatlivspolitik' : 'Privacy Policy';
+      }
+      
       console.log("Translation complete");
     } catch (error) {
       console.error("Error during translation:", error);
