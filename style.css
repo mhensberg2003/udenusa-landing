@@ -29,6 +29,9 @@ header h1 {
   font-weight: 700;
   margin-bottom: 10px;
   letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header .tagline {
@@ -160,4 +163,10 @@ footer a:hover {
     padding: 25px;
     margin: 0 15px 40px;
   }
+}
+
+.logo-image {
+  height: 70px;
+  margin-left: 10px;
+  vertical-align: middle;
 }
