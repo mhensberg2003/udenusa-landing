@@ -158,6 +158,12 @@ document.addEventListener('DOMContentLoaded', function() {
         privacyLink.textContent = lang === 'da' ? 'Privatlivspolitik' : 'Privacy Policy';
       }
       
+      // Update pressekit link in footer
+      const pressekitLink = document.querySelector('footer .pressekit-link');
+      if (pressekitLink) {
+        pressekitLink.textContent = lang === 'da' ? 'Pressekit' : 'Press Kit';
+      }
+      
       console.log("Translation complete");
     } catch (error) {
       console.error("Error during translation:", error);

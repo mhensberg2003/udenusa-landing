@@ -272,7 +272,7 @@
 
     <footer>
       <p>
-        2025, Vocata Studio | <a href="mailto:hello@vocata.app">hello@vocata.app</a> | <a href="privacy.html">Privatlivspolitik</a>
+        2025, Vocata Studio | <a href="mailto:hello@vocata.app">hello@vocata.app</a> | <a href="privacy.html">Privatlivspolitik</a> | <a href="pressekit.html">Pressekit</a>
       </p>
     </footer>
     
@@ -338,6 +338,11 @@
           const footerLink = document.querySelector('footer a[href="privacy.html"]');
           if (footerLink) {
             footerLink.textContent = lang === 'da' ? 'Privatlivspolitik' : 'Privacy Policy';
+          }
+          
+          const pressekitLink = document.querySelector('footer a[href="pressekit.html"]');
+          if (pressekitLink) {
+            pressekitLink.textContent = lang === 'da' ? 'Pressekit' : 'Press Kit';
           }
         }
       });
