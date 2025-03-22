@@ -34,6 +34,39 @@ header h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+/* Header text hover effect - improved version */
+header h1 span {
+  position: relative;
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: white;
+  transition: color 0.5s ease;
+}
+
+header h1:hover span {
+  color: rgba(255, 255, 255, 0); /* Make text transparent on hover */
+  background-image: linear-gradient(90deg, #fff, #32d74b, #fff);
+  background-size: 200% 100%;
+  background-position: -100% 0;
+  animation: gradientSwoosh 1.2s ease-in-out forwards;
+}
+
+header h1 span::before {
+  display: none; /* Remove the before element approach */
+}
+
+@keyframes gradientSwoosh {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 200% 0;
+    color: #fff;
+  }
 }
 
 header .tagline {
