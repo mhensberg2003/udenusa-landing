@@ -54,34 +54,59 @@ document.addEventListener('DOMContentLoaded', function() {
   // Set up FAQ dropdowns with improved performance
   function setupFaqDropdowns() {
     const faqQuestions = document.querySelectorAll('.faq-question');
+    let animating = false;
     
     faqQuestions.forEach(question => {
       question.addEventListener('click', function() {
+        if (animating) return;
+        
         const faqItem = this.parentElement;
         const faqAnswer = faqItem.querySelector('.faq-answer');
+        const isActive = faqItem.classList.contains('active');
         
-        // If this item is already active and we're closing it
-        if (faqItem.classList.contains('active')) {
-          // Set a specific height before collapsing to improve animation
-          const height = faqAnswer.scrollHeight;
-          faqAnswer.style.maxHeight = height + 'px';
+        // Prevent interaction during animation
+        animating = true;
+        
+        // Close all items
+        document.querySelectorAll('.faq-item.active').forEach(item => {
+          if (item !== faqItem) {
+            item.classList.remove('active');
+          }
+        });
+        
+        if (isActive) {
+          // Closing
+          faqAnswer.style.height = faqAnswer.scrollHeight + 'px';
           
           // Force reflow
           faqAnswer.offsetHeight;
           
-          // Then set to 0
+          // Animate to closed state
+          faqAnswer.style.height = '0px';
+          faqItem.classList.remove('active');
+          
           setTimeout(() => {
-            faqAnswer.style.maxHeight = '0px';
-            
-            // Remove active class after animation completes
-            setTimeout(() => {
-              faqItem.classList.remove('active');
-              faqAnswer.style.maxHeight = '';
-            }, 300);
-          }, 10);
+            faqAnswer.style.height = '';
+            animating = false;
+          }, 400);
         } else {
-          // Opening the item
+          // Opening
           faqItem.classList.add('active');
+          
+          // Set height to scrollHeight to animate
+          const height = faqAnswer.scrollHeight;
+          faqAnswer.style.height = '0px';
+          
+          // Force reflow
+          faqAnswer.offsetHeight;
+          
+          // Animate to open state
+          faqAnswer.style.height = height + 'px';
+          
+          setTimeout(() => {
+            faqAnswer.style.height = '';
+            animating = false;
+          }, 400);
         }
       });
     });
