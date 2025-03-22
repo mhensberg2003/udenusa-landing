@@ -22,6 +22,8 @@ header {
   padding: 80px 20px;
   background-color: #111;
   margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
 }
 
 header h1 {
@@ -289,4 +291,42 @@ footer a:hover {
   background-color: rgba(50, 215, 75, 0.1);
   color: #32d74b;
   transform: translateY(-2px);
+}
+
+.app-screenshots {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  pointer-events: none;
+}
+
+.screenshot {
+  position: absolute;
+  height: 500px;
+  width: auto;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.screenshot.left {
+  left: 5%;
+  transform: rotate(-5deg);
+}
+
+.screenshot.right {
+  right: 5%;
+  transform: rotate(5deg);
+}
+
+@media (max-width: 1200px) {
+  .screenshot {
+    height: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .screenshot {
+    display: none;
+  }
 }

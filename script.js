@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', function() {
     'quote': document.querySelector('.quote p'),
     'faq-title': document.querySelector('.faq h2'),
     'faq-questions': document.querySelectorAll('.faq-question strong'),
-    'faq-answers': document.querySelectorAll('.faq-answer p')
+    'faq-answers': document.querySelectorAll('.faq-answer p'),
+    'social-media-note': document.querySelector('.social-media-note')
   };
   
   // Get language buttons
@@ -120,6 +121,9 @@ document.addEventListener('DOMContentLoaded', function() {
       translatableElements.description.textContent = translations[lang].description;
       translatableElements.cta.textContent = translations[lang].ctaButton;
       translatableElements['qr-code'].textContent = translations[lang].qrCode;
+      
+      // Update social media note
+      translatableElements['social-media-note'].textContent = translations[lang].socialMediaNote;
       
       // Update problem section
       translatableElements['problem-title'].textContent = translations[lang].problemTitle;

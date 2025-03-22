@@ -9,6 +9,9 @@ const translations = {
     ctaButton: "Hent UdenUSA",
     qrCode: "[ QR kode │ Kommer snart ]",
     
+    // Social media note
+    socialMediaNote: "Måske virker det ironisk at bruge amerikansk ejet sociale medier, men vi vil nå ud til så mange danskere som muligt. Vi vender vi fjendens egne våben mod dem.",
+    
     // Problem section
     problemTitle: "Hvorfor undgå amerikanske produkter?",
     problemText: "Hver gang du køber et amerikansk produkt, støtter du indirekte et system, der modarbejder mange af de værdier, vi sætter pris på i Danmark. Men det kan være svært at gennemskue, hvor produkterne kommer fra. UdenUSA giver dig kontrollen tilbage.",
@@ -68,6 +71,9 @@ const translations = {
     description: "UdenUSA helps you identify American products and finds alternatives from the rest of the world.",
     ctaButton: "Download UdenUSA",
     qrCode: "[ QR code │ Coming soon ]",
+    
+    // Social media note
+    socialMediaNote: "Maybe it seems ironic to use American-owned social media, but we want to reach as many as possible. We're turning the enemy's own weapons against them.",
     
     // Problem section
     problemTitle: "Why avoid American products?",
