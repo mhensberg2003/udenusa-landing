@@ -131,6 +131,15 @@ ul li:last-child {
   align-items: center;
   cursor: pointer;
   padding: 10px 0;
+  transition: opacity 0.2s ease;
+}
+
+.faq-question:hover {
+  opacity: 0.8;
+}
+
+.faq-question:hover .icon svg {
+  stroke-width: 2.5;
 }
 
 .faq-question strong {
@@ -144,6 +153,17 @@ ul li:last-child {
   color: #32d74b;
   font-size: 1.2rem;
   transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-question .icon svg {
+  width: 14px;
+  height: 14px;
+  stroke: #32d74b;
+  stroke-width: 2;
+  transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .faq-answer {
@@ -164,7 +184,7 @@ ul li:last-child {
   padding: 0 10px 10px;
 }
 
-.faq-item.active .icon {
+.faq-item.active .icon svg {
   transform: rotate(180deg);
 }
 
