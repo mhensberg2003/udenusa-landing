@@ -50,7 +50,7 @@ const translations = {
       },
       {
         question: "Hvordan kan jeg bidrage til missionen?",
-        answer: "Foruden at bruge appen kan du: <br>- Dele UdenUSA med venner og familie, så flere kan træffe informerede valg. <br>- Give os feedback til, hvordan vi kan gøre appen endnu bedre.<br>- Fortsætte som PRO-medlem og dermed støtte løbende udvikling og nye funktioner."
+        answer: "Udover at bruge appen kan du: <br>- Dele UdenUSA med venner og familie, så flere kan træffe informerede valg. <br>- Give os feedback til, hvordan vi kan gøre appen endnu bedre.<br>- Fortsætte som PRO-medlem og dermed støtte løbende udvikling og nye funktioner."
       },
       {
         question: "Hvordan kan jeg kontakte jer for support eller feedback?",
