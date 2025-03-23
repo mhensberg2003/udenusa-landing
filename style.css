@@ -491,3 +491,29 @@ footer a:hover {
     margin-top: 2rem;
   }
 }
+
+/* Pressekit specific styles */
+.pressekit-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.pressekit-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #32d74b;
+  padding-top: 60px; /* Add padding to prevent overlap with language picker */
+}
+
+@media (max-width: 768px) {
+  .pressekit-title {
+    padding-top: 70px; /* Increase padding on mobile */
+    font-size: 1.8rem; /* Slightly reduce font size on mobile */
+  }
+  
+  .pressekit-container {
+    padding: 15px;
+  }
+}
