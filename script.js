@@ -17,8 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
     'solution-items': document.querySelectorAll('.solution li'),
     'quote': document.querySelector('.quote p'),
     'faq-title': document.querySelector('.faq h2'),
-    'faq-questions': document.querySelectorAll('.faq-question strong'),
-    'faq-answers': document.querySelectorAll('.faq-answer p'),
     'social-media-note': document.querySelector('.social-media-note')
   };
   
@@ -127,6 +125,36 @@ document.addEventListener('DOMContentLoaded', function() {
     document.documentElement.lang = lang;
   }
   
+  // Generate FAQ items
+  function generateFaqItems(lang) {
+    const faqContainer = document.getElementById('faq-container');
+    faqContainer.innerHTML = ''; // Clear existing items
+    
+    translations[lang].faqItems.forEach(item => {
+      const faqItem = document.createElement('div');
+      faqItem.className = 'faq-item';
+      
+      faqItem.innerHTML = `
+        <div class="faq-question">
+          <strong>${item.question}</strong>
+          <span class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </span>
+        </div>
+        <div class="faq-answer">
+          <p>${item.answer}</p>
+        </div>
+      `;
+      
+      faqContainer.appendChild(faqItem);
+    });
+    
+    // Set up dropdowns for the new items
+    setupFaqDropdowns();
+  }
+  
   // Translate the page content
   function translatePage(lang) {
     console.log("Translating page to:", lang);
@@ -168,18 +196,8 @@ document.addEventListener('DOMContentLoaded', function() {
       // Update FAQ section
       translatableElements['faq-title'].textContent = translations[lang].faqTitle;
       
-      // Update FAQ questions and answers
-      translatableElements['faq-questions'].forEach((question, index) => {
-        if (translations[lang].faqItems[index]) {
-          question.textContent = translations[lang].faqItems[index].question;
-        }
-      });
-      
-      translatableElements['faq-answers'].forEach((answer, index) => {
-        if (translations[lang].faqItems[index]) {
-          answer.innerHTML = translations[lang].faqItems[index].answer;
-        }
-      });
+      // Generate FAQ items
+      generateFaqItems(lang);
       
       // Update privacy policy link in footer
       const privacyLink = document.querySelector('footer .privacy-link');
