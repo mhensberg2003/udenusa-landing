@@ -434,6 +434,30 @@ footer a:hover {
   transform: translateY(-2px);
 }
 
+@keyframes float {
+  0% {
+    transform: rotate(-5deg) translateY(15%);
+  }
+  50% {
+    transform: rotate(-5deg) translateY(12%);
+  }
+  100% {
+    transform: rotate(-5deg) translateY(15%);
+  }
+}
+
+@keyframes floatRight {
+  0% {
+    transform: rotate(5deg) translateY(15%);
+  }
+  50% {
+    transform: rotate(5deg) translateY(12%);
+  }
+  100% {
+    transform: rotate(5deg) translateY(15%);
+  }
+}
+
 .app-screenshots {
   position: absolute;
   top: 0;
@@ -454,12 +478,18 @@ footer a:hover {
 
 .screenshot.left {
   left: 5%;
-  transform: rotate(-5deg) translateY(15%);
+  animation: float 6s ease-in-out infinite;
 }
 
 .screenshot.right {
   right: 5%;
-  transform: rotate(5deg) translateY(15%);
+  animation: floatRight 6s ease-in-out infinite;
+  animation-delay: -3s;
+}
+
+.screenshot:hover {
+  transform: scale(1.05) rotate(0deg);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
 /* Social media container needs to be below the screenshots but still visible */
