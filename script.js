@@ -46,6 +46,15 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // Translate the page
       translatePage(lang);
+
+      // Close the dropdown by adding a temporary class
+      const languageSwitcher = document.querySelector('.language-switcher');
+      languageSwitcher.classList.add('no-hover');
+      
+      // Remove the class after a short delay
+      setTimeout(() => {
+        languageSwitcher.classList.remove('no-hover');
+      }, 300);
     });
   });
   
