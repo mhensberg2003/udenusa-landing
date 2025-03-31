@@ -93,7 +93,7 @@ header .description {
   text-decoration: none;
   font-weight: 600;
   border-radius: 6px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   transition: all 0.2s ease;
 }
 
@@ -115,6 +115,7 @@ header .description {
 .qr-code-img {
   width: 180px;
   height: 180px;
+  margin-top: 40px;
   margin-bottom: 10px;
   border-radius: 10px;
   background-color: white;
@@ -124,6 +125,13 @@ header .description {
 .qr-code-text {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.app-availability {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 20px;
+  font-style: italic;
 }
 
 /* Sections */

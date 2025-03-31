@@ -8,6 +8,7 @@ const translations = {
     description: "UdenUSA hjælper dig med at identificere amerikanske produkter og finder alternativer fra resten af verden.",
     ctaButton: "Hent UdenUSA",
     qrCode: "Scan QR koden for at hente appen",
+    appAvailability: "Ude på iPhone, Android kommer snart",
     
     // Social media note
     socialMediaNote: "Måske virker det ironisk at bruge amerikansk ejet sociale medier, men vi vil nå ud til så mange danskere som muligt. Vi vender vi fjendens egne våben mod dem.",
@@ -75,6 +76,7 @@ const translations = {
     description: "UdenUSA helps you identify American products and finds alternatives from the rest of the world.",
     ctaButton: "Download UdenUSA",
     qrCode: "Scan the QR code to download the app",
+    appAvailability: "Available on iPhone, Android coming soon",
     
     // Social media note
     socialMediaNote: "Maybe it seems ironic to use American-owned social media, but we want to reach as many as possible. We're turning the enemy's own weapons against them.",

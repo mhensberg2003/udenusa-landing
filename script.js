@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     'tagline': document.querySelector('.tagline'),
     'description': document.querySelector('.description'),
     'cta': document.querySelector('.cta'),
+    'app-availability': document.querySelector('.app-availability'),
     'qr-code': document.querySelector('.qr-code'),
     'problem-title': document.querySelector('.problem h2'),
     'problem-text': document.querySelector('.problem p'),
@@ -182,6 +183,9 @@ document.addEventListener('DOMContentLoaded', function() {
       translatableElements.tagline.textContent = translations[lang].tagline;
       translatableElements.description.textContent = translations[lang].description;
       translatableElements.cta.textContent = translations[lang].ctaButton;
+      
+      // Update app availability text
+      translatableElements['app-availability'].textContent = translations[lang].appAvailability;
       
       // Update QR code text
       const qrCodeTextElement = document.querySelector('.qr-code .qr-code-text');
