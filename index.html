@@ -26,8 +26,11 @@
       <p class="description">
         UdenUSA hjælper dig med at identificere amerikanske produkter og finder alternativer fra resten af verden.
       </p>
-      <a href="#" class="cta" id="downloadButton">Hent UdenUSA</a>
-      <div class="qr-code">[ QR kode │ Kommer snart ]</div>
+      <a href="https://apps.apple.com/app/id6742805777" class="cta" id="downloadButton">Hent UdenUSA</a>
+      <div class="qr-code">
+        <img src="qr-code-udenusa.png" alt="UdenUSA App Store QR Code" class="qr-code-img">
+        <div class="qr-code-text">Scan QR koden for at hente appen</div>
+      </div>
     </header>
 
     <!-- ASCII Art Popup -->
@@ -67,6 +70,7 @@
         z-index: 1000;
         justify-content: center;
         align-items: center;
+        padding: 20px;
       }
 
       .ascii-popup-content {
@@ -77,6 +81,7 @@
         max-width: 90%;
         max-height: 90vh;
         overflow: auto;
+        width: 100%;
       }
 
       .ascii-art {
@@ -86,6 +91,8 @@
         margin: 0;
         font-size: 8px;
         line-height: 1;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
       }
 
       .close-popup {
@@ -97,7 +104,9 @@
         color: #32d74b;
         font-size: 24px;
         cursor: pointer;
-        padding: 5px;
+        padding: 10px;
+        z-index: 1001;
+        touch-action: manipulation;
       }
 
       .close-popup:hover {
@@ -105,22 +114,33 @@
       }
 
       @media (max-width: 768px) {
+        .ascii-popup {
+          padding: 10px;
+        }
+
+        .ascii-popup-content {
+          padding: 15px;
+          max-width: 95%;
+        }
+
         .ascii-art {
           font-size: 6px;
+          line-height: 1.2;
+        }
+
+        .close-popup {
+          top: 5px;
+          right: 5px;
+          padding: 15px;
+          font-size: 28px;
         }
       }
     </style>
 
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        const downloadButton = document.getElementById('downloadButton');
         const popup = document.getElementById('asciiPopup');
         const closeButton = document.querySelector('.close-popup');
-
-        downloadButton.addEventListener('click', function(e) {
-          e.preventDefault();
-          popup.style.display = 'flex';
-        });
 
         closeButton.addEventListener('click', function() {
           popup.style.display = 'none';

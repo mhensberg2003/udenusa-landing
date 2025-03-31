@@ -7,7 +7,7 @@ const translations = {
     tagline: "Støtter du Trump når du handler?",
     description: "UdenUSA hjælper dig med at identificere amerikanske produkter og finder alternativer fra resten af verden.",
     ctaButton: "Hent UdenUSA",
-    qrCode: "[ QR kode │ Kommer snart ]",
+    qrCode: "Scan QR koden for at hente appen",
     
     // Social media note
     socialMediaNote: "Måske virker det ironisk at bruge amerikansk ejet sociale medier, men vi vil nå ud til så mange danskere som muligt. Vi vender vi fjendens egne våben mod dem.",
@@ -74,7 +74,7 @@ const translations = {
     tagline: "Are you supporting Trump when you shop?",
     description: "UdenUSA helps you identify American products and finds alternatives from the rest of the world.",
     ctaButton: "Download UdenUSA",
-    qrCode: "[ QR code │ Coming soon ]",
+    qrCode: "Scan the QR code to download the app",
     
     // Social media note
     socialMediaNote: "Maybe it seems ironic to use American-owned social media, but we want to reach as many as possible. We're turning the enemy's own weapons against them.",

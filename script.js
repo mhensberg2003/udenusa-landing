@@ -182,7 +182,12 @@ document.addEventListener('DOMContentLoaded', function() {
       translatableElements.tagline.textContent = translations[lang].tagline;
       translatableElements.description.textContent = translations[lang].description;
       translatableElements.cta.textContent = translations[lang].ctaButton;
-      translatableElements['qr-code'].textContent = translations[lang].qrCode;
+      
+      // Update QR code text
+      const qrCodeTextElement = document.querySelector('.qr-code .qr-code-text');
+      if (qrCodeTextElement) {
+        qrCodeTextElement.textContent = translations[lang].qrCode;
+      }
       
       // Update social media note
       translatableElements['social-media-note'].textContent = translations[lang].socialMediaNote;
@@ -225,4 +230,17 @@ document.addEventListener('DOMContentLoaded', function() {
       console.error("Error during translation:", error);
     }
   }
+
+  const popup = document.getElementById('asciiPopup');
+  const closeButton = document.querySelector('.close-popup');
+
+  closeButton.addEventListener('click', function() {
+    popup.style.display = 'none';
+  });
+
+  popup.addEventListener('click', function(e) {
+    if (e.target === popup) {
+      popup.style.display = 'none';
+    }
+  });
 }); 
