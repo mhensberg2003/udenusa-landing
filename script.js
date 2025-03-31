@@ -1,6 +1,25 @@
 document.addEventListener('DOMContentLoaded', function() {
   console.log("DOM loaded, initializing language system");
   
+  // Set up QR code modal
+  const qrCode = document.querySelector('.qr-code-img');
+  const qrModal = document.getElementById('qrModal');
+  const closeQrModal = document.querySelector('.close-qr-modal');
+
+  qrCode.addEventListener('click', function() {
+    qrModal.style.display = 'flex';
+  });
+
+  closeQrModal.addEventListener('click', function() {
+    qrModal.style.display = 'none';
+  });
+
+  qrModal.addEventListener('click', function(e) {
+    if (e.target === qrModal) {
+      qrModal.style.display = 'none';
+    }
+  });
+  
   // Set up FAQ dropdowns
   setupFaqDropdowns();
   
