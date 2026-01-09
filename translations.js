@@ -4,14 +4,14 @@ const translations = {
     pageTitle: "UdenUSA - Find alternativer til amerikanske produkter",
     
     // Header
-    tagline: "Støtter du Trump når du handler?",
+    tagline: "Støtter du Trump, når du handler?",
     description: "UdenUSA hjælper dig med at identificere amerikanske produkter og finder alternativer fra resten af verden.",
     ctaButton: "Hent UdenUSA",
-    qrCode: "Scan QR koden for at hente appen",
-    appAvailability: "Ude på iPhone, Android kommer snart",
+    qrCode: "Scan QR-koden for at hente appen",
+    appAvailability: "Tilgængelig på iPhone – Android kommer snart",
     
     // Social media note
-    socialMediaNote: "Måske virker det ironisk at bruge amerikansk ejet sociale medier, men vi vil nå ud til så mange danskere som muligt. Vi vender vi fjendens egne våben mod dem.",
+    socialMediaNote: "Måske virker det ironisk at bruge amerikansk-ejede sociale medier, men vi vil nå ud til så mange danskere som muligt. Vi vender fjendens egne våben mod dem.",
     
     // Problem section
     problemTitle: "Hvorfor undgå amerikanske produkter?",
@@ -27,7 +27,7 @@ const translations = {
     ],
     
     // Quote
-    quote: "\"Hjælp os mindske vores afhængighed af USA.\"",
+    quote: "\"Hjælp os med at mindske vores afhængighed af USA.\"",
     
     // FAQ section
     faqTitle: "Ofte stillede spørgsmål",
@@ -38,15 +38,15 @@ const translations = {
       },
       {
         question: "Hvordan virker scanneren?",
-        answer: "Åbn appen, scan et produkt, og få øjeblikkeligt at vide om produktet er amerikansk."
+        answer: "Åbn appen, scan et produkt, og få øjeblikkeligt at vide, om produktet er amerikansk."
       },
       {
         question: "Hvilke produkter kan jeg scanne?",
-        answer: "Alle produkter, for de bedste resultater anbefaler vi at scanne produktet i god belysning og uden at dække noget af produktet – fødevarer, elektronik, tøj og meget mere."
+        answer: "Alle produkter. For de bedste resultater anbefaler vi, at du scanner produktet i god belysning og uden at dække noget af produktet – f.eks. fødevarer, elektronik, tøj og meget mere."
       },
       {
         question: "Er det gratis?",
-        answer: "Delvist, UdenUSA er gratis at bruge, men for den bedste oplevelse anbefaler vi at du opgraderer til Pro-versionen. UdenUSA Pro giver dig ubegrænser scanninger, mere detaljerede resultater og en masse andre fede features."
+        answer: "Delvist. UdenUSA er gratis at bruge, men for den bedste oplevelse anbefaler vi, at du opgraderer til Pro-versionen. UdenUSA Pro giver dig ubegrænsede scanninger, mere detaljerede resultater og en masse andre fede funktioner."
       },
       {
         question: "Hvorfor fokusere på USA?",
@@ -54,7 +54,7 @@ const translations = {
       },
       {
         question: "Hvordan kan jeg bidrage til missionen?",
-        answer: "Udover at bruge appen kan du: <br>- Dele UdenUSA med venner og familie, så flere kan træffe informerede valg. <br>- Give os feedback til, hvordan vi kan gøre appen endnu bedre.<br>- Fortsætte som PRO-medlem og dermed støtte løbende udvikling og nye funktioner."
+        answer: "Ud over at bruge appen kan du: <br>- Dele UdenUSA med venner og familie, så flere kan træffe informerede valg. <br>- Give os feedback til, hvordan vi kan gøre appen endnu bedre. <br>- Fortsætte som PRO-medlem og dermed støtte den løbende udvikling og nye funktioner."
       },
       {
         question: "Hvordan kan jeg kontakte jer for support eller feedback?",
@@ -79,7 +79,7 @@ const translations = {
     appAvailability: "Available on iPhone, Android coming soon",
     
     // Social media note
-    socialMediaNote: "Maybe it seems ironic to use American-owned social media, but we want to reach as many as possible. We're turning the enemy's own weapons against them.",
+    socialMediaNote: "Maybe it seems ironic to use American-owned social media, but we want to reach as many people as possible. We're turning the enemy's own weapons against them.",
     
     // Problem section
     problemTitle: "Why avoid American products?",
@@ -95,7 +95,7 @@ const translations = {
     ],
     
     // Quote
-    quote: "\"Help us reduce our dependence on the US.\"",
+    quote: "\"Help us reduce our dependence on the USA.\"",
     
     // FAQ section
     faqTitle: "Frequently Asked Questions",
