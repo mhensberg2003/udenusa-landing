@@ -1,0 +1,16 @@
+{
+  "name": "udenusa-landing",
+  "version": "1.0.0",
+  "description": "UdenUSA Landing Page",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server",
+    "start": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
