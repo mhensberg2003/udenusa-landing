@@ -20,10 +20,10 @@ const translations = {
     // Solution section
     solutionTitle: "Sådan fungerer det",
     solutionItems: [
-      "Scan produktet med din mobil",
-      "Se om produktet stammer fra USA",
-      "Få vist alternativer fra andre lande",
-      "Ingen sporing – din søgning forbliver privat"
+      "📱 Scan produktet med din mobil",
+      "🔍 Se om produktet stammer fra USA",
+      "🌍 Få vist alternativer fra andre lande",
+      "🔒 Ingen sporing – din søgning forbliver privat"
     ],
     
     // Quote
@@ -88,10 +88,10 @@ const translations = {
     // Solution section
     solutionTitle: "How it works",
     solutionItems: [
-      "Scan the product with your phone",
-      "See if the product comes from the USA",
-      "Get alternatives from other countries",
-      "No tracking – your search remains private"
+      "📱 Scan the product with your phone",
+      "🔍 See if the product comes from the USA",
+      "🌍 Get alternatives from other countries",
+      "🔒 No tracking – your search remains private"
     ],
     
     // Quote
