@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     'solution-items': document.querySelectorAll('.solution li'),
     'quote': document.querySelector('.quote p'),
     'faq-title': document.querySelector('.faq h2'),
+    'social-media-heading': document.querySelector('.social-media-heading'),
     'social-media-note': document.querySelector('.social-media-note')
   };
   
@@ -212,7 +213,8 @@ document.addEventListener('DOMContentLoaded', function() {
         qrCodeTextElement.textContent = translations[lang].qrCode;
       }
       
-      // Update social media note
+      // Update social media section
+      translatableElements['social-media-heading'].textContent = translations[lang].socialMediaHeading;
       translatableElements['social-media-note'].textContent = translations[lang].socialMediaNote;
       
       // Update problem section

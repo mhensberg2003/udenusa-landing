@@ -10,7 +10,8 @@ const translations = {
     qrCode: "Scan QR-koden for at hente appen",
     appAvailability: "Tilgængelig på iPhone – Android kommer snart",
     
-    // Social media note
+    // Social media
+    socialMediaHeading: "Følg os på sociale medier",
     socialMediaNote: "Måske virker det ironisk at bruge amerikansk-ejede sociale medier, men vi vil nå ud til så mange danskere som muligt. Vi vender fjendens egne våben mod dem.",
     
     // Problem section
@@ -78,7 +79,8 @@ const translations = {
     qrCode: "Scan the QR code to download the app",
     appAvailability: "Available on iPhone, Android coming soon",
     
-    // Social media note
+    // Social media
+    socialMediaHeading: "Follow us on social media",
     socialMediaNote: "Maybe it seems ironic to use American-owned social media, but we want to reach as many people as possible. We're turning the enemy's own weapons against them.",
     
     // Problem section

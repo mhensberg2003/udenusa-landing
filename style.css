@@ -422,6 +422,13 @@ footer a:hover {
   z-index: 1;
 }
 
+.social-media-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #32d74b;
+  margin-bottom: 1.5rem;
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
