@@ -1,16 +1,23 @@
 {
   "name": "udenusa-landing",
   "version": "1.0.0",
-  "description": "UdenUSA Landing Page",
-  "main": "index.html",
+  "private": true,
   "scripts": {
-    "dev": "lite-server",
-    "start": "lite-server"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^1.6.1",
+    "next": "^16.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.0"
   }
 }

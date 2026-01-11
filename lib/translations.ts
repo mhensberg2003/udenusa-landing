@@ -1,4 +1,4 @@
-const translations = {
+export const translations = {
   da: {
     // Meta
     pageTitle: "UdenUSA - Find alternativer til amerikanske produkter",
@@ -65,7 +65,22 @@ const translations = {
         question: "Er scanningsresultater altid 100% præcise?",
         answer: "De fleste scanninger leverer nøjagtige resultater takket være vores løbende opdaterede data. I sjældne tilfælde kan der forekomme små variationer, men vi arbejder konstant på at sikre, at du altid får den mest pålidelige information."
       }
-    ]
+    ],
+    
+    // Footer
+    privacyPolicy: "Privatlivspolitik",
+    pressKit: "Pressekit",
+    
+    // Newsletter
+    newsletterTitle: "Venteliste til Android & nye funktioner",
+    newsletterDescription: "Få besked når Android-versionen af UdenUSA lanceres, når nye lande understøttes og lignende vigtigte opdateringer",
+    newsletterPlaceholder: "John@email.dk",
+    newsletterButton: "Tilmeld",
+    newsletterDisclaimer: "Vi sender kun relevante opdateringer. Ingen spam.",
+    newsletterEmailHint: "Angiv din e-mailadresse for at abonnere. Du kan altid afmelde.",
+    
+    // Press Kit page
+    backToHome: "← Tilbage til forsiden"
   },
   
   en: {
@@ -134,6 +149,24 @@ const translations = {
         question: "Are scanning results always 100% accurate?",
         answer: "Most scans deliver accurate results thanks to our continuously updated data. In rare cases, there may be small variations, but we constantly work to ensure you always get the most reliable information."
       }
-    ]
+    ],
+    
+    // Footer
+    privacyPolicy: "Privacy Policy",
+    pressKit: "Press Kit",
+    
+    // Newsletter
+    newsletterTitle: "Waitlist for Android & new features",
+    newsletterDescription: "Get notified when the Android version of UdenUSA launches, when new countries are supported, and similar important updates",
+    newsletterPlaceholder: "john@email.com",
+    newsletterButton: "Subscribe",
+    newsletterDisclaimer: "We only send relevant updates. No spam.",
+    newsletterEmailHint: "Enter your email address to subscribe. You can always unsubscribe.",
+    
+    // Press Kit page
+    backToHome: "← Back to home page"
   }
-}; 
+} as const;
+
+export type Language = keyof typeof translations;
+export type TranslationKey = keyof typeof translations.da;
