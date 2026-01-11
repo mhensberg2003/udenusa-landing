@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import { LanguageProvider } from '@/lib/LanguageContext';
+import BrevoScripts from '@/components/BrevoScripts';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -43,9 +44,14 @@ export default function RootLayout({
     <html lang="da" suppressHydrationWarning>
       <head>
         <link rel="canonical" href="https://udenusa.com/" />
+        <link
+          rel="stylesheet"
+          href="https://sibforms.com/forms/end-form/build/sib-styles.css"
+        />
       </head>
       <body className={inter.className}>
         <Providers>{children}</Providers>
+        <BrevoScripts />
         <Analytics />
       </body>
     </html>
