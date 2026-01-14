@@ -127,7 +127,7 @@ function DanishContent({ backToHome }: { backToHome: string }) {
             <strong>Navn</strong>: Jonas Pipper (Founder)
           </li>
           <li className="bullet-item">
-            <strong>E-mail</strong>: hello@vocata.app
+            <strong>E-mail</strong>: info@nonusa.org
           </li>
         </ul>
 
@@ -135,6 +135,21 @@ function DanishContent({ backToHome }: { backToHome: string }) {
           Vi står til rådighed for spørgsmål, interviews og demonstrationer af
           appen.
         </blockquote>
+      </div>
+
+      <hr />
+
+      <div>
+        <h2 className="section-title">5a. Kontakt os direkte</h2>
+        <p className="pressekit-text">
+          <strong>E-mail:</strong>{' '}
+          <a href="mailto:info@nonusa.org" style={{ color: '#32d74b', textDecoration: 'none' }}>
+            info@nonusa.org
+          </a>
+        </p>
+        <p className="pressekit-text">
+          Vi svarer gerne på spørgsmål, tilbyder interviews og kan demonstrere appen.
+        </p>
       </div>
 
       <hr />
@@ -453,6 +468,21 @@ function EnglishContent({ backToHome }: { backToHome: string }) {
           We are happy to do interviews and can show how the app helps Danes
           shop more consciously – in under 5 seconds per scan.
         </blockquote>
+      </div>
+
+      <hr />
+
+      <div>
+        <h2 className="section-title">10a. Contact Us Directly</h2>
+        <p className="pressekit-text">
+          <strong>Email:</strong>{' '}
+          <a href="mailto:info@nonusa.org" style={{ color: '#32d74b', textDecoration: 'none' }}>
+            info@nonusa.org
+          </a>
+        </p>
+        <p className="pressekit-text">
+          We are happy to answer questions, provide interviews, and demonstrate the app.
+        </p>
       </div>
 
       <hr />

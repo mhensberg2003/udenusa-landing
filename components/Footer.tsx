@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer>
       <p>
-        2026, Vocata Studio | <a href="mailto:hello@vocata.app">hello@vocata.app</a> |{' '}
+        2026, Vocata Studio | <a href="mailto:info@nonusa.org">info@nonusa.org</a> |{' '}
         <Link href="/privacy" className="privacy-link">
           {t.privacyPolicy}
         </Link>{' '}

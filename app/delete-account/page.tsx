@@ -36,8 +36,8 @@ function DanishContent({ backToHome }: { backToHome: string }) {
           For at anmode om sletning af din UdenUSA-konto, send en e-mail til:
         </p>
         <p className="privacy-text" style={{ fontSize: '1.1rem', fontWeight: '600' }}>
-          <a href="mailto:hello@vocata.app" style={{ color: '#32d74b', textDecoration: 'none' }}>
-            hello@vocata.app
+          <a href="mailto:info@nonusa.org" style={{ color: '#32d74b', textDecoration: 'none' }}>
+            info@nonusa.org
           </a>
         </p>
         <p className="privacy-text">
@@ -99,8 +99,8 @@ function EnglishContent({ backToHome }: { backToHome: string }) {
           To request deletion of your UdenUSA account, email us at:
         </p>
         <p className="privacy-text" style={{ fontSize: '1.1rem', fontWeight: '600' }}>
-          <a href="mailto:hello@vocata.app" style={{ color: '#32d74b', textDecoration: 'none' }}>
-            hello@vocata.app
+          <a href="mailto:info@nonusa.org" style={{ color: '#32d74b', textDecoration: 'none' }}>
+            info@nonusa.org
           </a>
         </p>
         <p className="privacy-text">

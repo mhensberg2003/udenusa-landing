@@ -59,7 +59,7 @@ export const translations = {
       },
       {
         question: "Hvordan kan jeg kontakte jer for support eller feedback?",
-        answer: "Du kan altid sende en e-mail til vores support eller benytte kontaktformularen på vores hjemmeside. Vi bestræber os på at svare så hurtigt som muligt."
+        answer: "Du kan altid sende en e-mail til info@nonusa.org. Vi bestræber os på at svare så hurtigt som muligt."
       },
       {
         question: "Er scanningsresultater altid 100% præcise?",
@@ -143,7 +143,7 @@ export const translations = {
       },
       {
         question: "How can I contact you for support or feedback?",
-        answer: "You can always send an email to our support team or use the contact form on our website. We strive to respond as quickly as possible."
+        answer: "You can always send an email to info@nonusa.org. We strive to respond as quickly as possible."
       },
       {
         question: "Are scanning results always 100% accurate?",

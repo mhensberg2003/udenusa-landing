@@ -12,7 +12,7 @@ import { useLanguage } from '@/lib/LanguageContext';
 import Script from 'next/script';
 
 export default function Home() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [qrModalOpen, setQrModalOpen] = useState(false);
 
   return (

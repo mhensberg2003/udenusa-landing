@@ -146,7 +146,7 @@ function DanishContent({ backToHome }: { backToHome: string }) {
 
         <p className="privacy-text">
           For at udøve disse rettigheder, kontakt os venligst på
-          hello@vocata.app.
+          info@nonusa.org.
         </p>
       </div>
 
@@ -169,7 +169,7 @@ function DanishContent({ backToHome }: { backToHome: string }) {
           Hvis du har spørgsmål eller bekymringer vedrørende denne
           privatlivspolitik, kontakt os venligst på:
         </p>
-        <p className="privacy-text">E-mail: hello@vocata.app</p>
+        <p className="privacy-text">E-mail: info@nonusa.org</p>
       </div>
 
       <div className="privacy-footer">
@@ -301,7 +301,7 @@ function EnglishContent({ backToHome }: { backToHome: string }) {
         </ul>
 
         <p className="privacy-text">
-          To exercise these rights, please contact us at hello@vocata.app.
+          To exercise these rights, please contact us at info@nonusa.org.
         </p>
       </div>
 
@@ -324,7 +324,7 @@ function EnglishContent({ backToHome }: { backToHome: string }) {
           If you have questions or concerns regarding this privacy policy,
           please contact us at:
         </p>
-        <p className="privacy-text">Email: hello@vocata.app</p>
+        <p className="privacy-text">Email: info@nonusa.org</p>
       </div>
 
       <div className="privacy-footer">
