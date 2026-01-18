@@ -15,6 +15,30 @@ export default function Home() {
   const { t, language } = useLanguage();
   const [qrModalOpen, setQrModalOpen] = useState(false);
 
+  const pressMentions = [
+    {
+      name: 'TV Midtvest',
+      href: 'https://www.tvmidtvest.dk/',
+      logo: '/images/press-logos/Tv-Midtvest-logo.png',
+      width: 240,
+      height: 80,
+    },
+    {
+      name: 'Ekstra Bladet',
+      href: 'https://ekstrabladet.dk/forbrug/Teknologi/21-aarig-udnytter-trump-kaos-app-stikker-helt-af/11065512',
+      logo: '/images/press-logos/Ekstra-Bladet-logo.png',
+      width: 240,
+      height: 80,
+    },
+    {
+      name: 'Computerworld',
+      href: 'https://www.computerworld.dk/art/294241/morgen-briefing-dansk-app-rider-paa-trump-boelge-politiet-dropper-x-iran-slukker-for-droemmen-om-skotlands-uafhaengighed',
+      logo: '/images/press-logos/Computer-World-logov2.png',
+      width: 240,
+      height: 80,
+    },
+  ];
+
   return (
     <>
       <LanguageSwitcher />
@@ -70,6 +94,41 @@ export default function Home() {
       </header>
 
       <Newsletter />
+
+      <section className="press-mentions">
+        <h2 className="press-title">{t.pressTitle}</h2>
+        <div className="press-marquee" aria-label={t.pressTitle}>
+          <div className="press-mask">
+            <div className="press-track">
+              {pressMentions.concat(pressMentions).map((mention, index) => {
+                const hasLink = Boolean(mention.href);
+
+                return (
+                  <a
+                    key={`${mention.name}-${index}`}
+                    href={hasLink ? mention.href : undefined}
+                    className={`press-logo${hasLink ? '' : ' is-disabled'}`}
+                    target={hasLink ? '_blank' : undefined}
+                    rel={hasLink ? 'noreferrer' : undefined}
+                    aria-label={
+                      hasLink
+                        ? `${mention.name} article`
+                        : `${mention.name} article coming soon`
+                    }
+                  >
+                    <Image
+                      src={mention.logo}
+                      alt={mention.name}
+                      width={mention.width}
+                      height={mention.height}
+                    />
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
 
       <SocialIcons />
 

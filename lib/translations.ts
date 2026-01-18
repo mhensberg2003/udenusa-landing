@@ -13,6 +13,9 @@ export const translations = {
     // Social media
     socialMediaHeading: "Følg os på sociale medier",
     socialMediaNote: "Måske virker det ironisk at bruge amerikansk-ejede sociale medier, men vi vil nå ud til så mange danskere som muligt. Vi vender fjendens egne våben mod dem.",
+
+    // Press mentions
+    pressTitle: "Omtalt i medierne",
     
     // Problem section
     problemTitle: "Hvorfor undgå amerikanske produkter?",
@@ -97,6 +100,9 @@ export const translations = {
     // Social media
     socialMediaHeading: "Follow us on social media",
     socialMediaNote: "Maybe it seems ironic to use American-owned social media, but we want to reach as many people as possible. We're turning the enemy's own weapons against them.",
+
+    // Press mentions
+    pressTitle: "Featured across Denmark",
     
     // Problem section
     problemTitle: "Why avoid American products?",
