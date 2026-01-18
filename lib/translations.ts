@@ -24,7 +24,7 @@ export const translations = {
     // Solution section
     solutionTitle: "Sådan fungerer det",
     solutionItems: [
-      "📱 Scan produktet med din mobil",
+      "📱 Scan produktet med din mobil (Ikke stregkoden!)",
       "🔍 Se om produktet stammer fra USA",
       "🌍 Få vist alternativer fra andre lande",
       "🔒 Ingen sporing – din søgning forbliver privat"
@@ -111,7 +111,7 @@ export const translations = {
     // Solution section
     solutionTitle: "How it works",
     solutionItems: [
-      "📱 Scan the product with your phone",
+      "📱 Scan the product with your phone (Not the barcode!)",
       "🔍 See if the product comes from the USA",
       "🌍 Get alternatives from other countries",
       "🔒 No tracking – your search remains private"
