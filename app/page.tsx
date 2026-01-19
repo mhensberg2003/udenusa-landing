@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import SocialIcons from '@/components/SocialIcons';
 import FAQ from '@/components/FAQ';
 import Newsletter from '@/components/Newsletter';
+import AppETA from '@/components/AppETA';
 import QRModal from '@/components/QRModal';
 import { useLanguage } from '@/lib/LanguageContext';
 import Script from 'next/script';
@@ -92,6 +93,8 @@ export default function Home() {
           <div className="qr-code-text">{t.qrCode}</div>
         </div>
       </header>
+
+      <AppETA />
 
       <Newsletter />
 

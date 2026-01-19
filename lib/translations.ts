@@ -74,6 +74,17 @@ export const translations = {
     privacyPolicy: "Privatlivspolitik",
     pressKit: "Pressekit",
     
+    // App ETA Section
+    etaTitle: "App Status",
+    etaAndroid: "Android",
+    etaAndroidStatus: "Til review hos Play Store",
+    etaAndroidDate: "Forventet: 20.–23. januar",
+    etaAndroidMarkets: "Hele verden",
+    etaIos: "iOS/Apple",
+    etaIosStatus: "Tilgængelig nu",
+    etaIosDate: "Udgivet: 19. januar 2026",
+    etaIosMarkets: "Hele verden",
+
     // Newsletter
     newsletterTitle: "Venteliste til Android & nye funktioner",
     newsletterDescription: "Få besked når Android-versionen af UdenUSA lanceres, når nye lande understøttes og lignende vigtigte opdateringer",
@@ -160,7 +171,18 @@ export const translations = {
     // Footer
     privacyPolicy: "Privacy Policy",
     pressKit: "Press Kit",
-    
+
+    // App ETA Section
+    etaTitle: "App Status",
+    etaAndroid: "Android",
+    etaAndroidStatus: "Under review by Play Store",
+    etaAndroidDate: "Expected: January 20–23",
+    etaAndroidMarkets: "Worldwide",
+    etaIos: "iOS/Apple",
+    etaIosStatus: "Available now",
+    etaIosDate: "Released: January 19, 2026",
+    etaIosMarkets: "Worldwide",
+
     // Newsletter
     newsletterTitle: "Waitlist for Android & new features",
     newsletterDescription: "Get notified when the Android version of UdenUSA launches, when new countries are supported, and similar important updates",
