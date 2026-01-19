@@ -28,7 +28,7 @@ export default function AppETA() {
   const { t } = useLanguage();
 
   return (
-    <section className="app-eta">
+    <section className="app-eta" id="status">
       <h2 className="eta-title">{t.etaTitle}</h2>
       <div className="eta-grid">
         <div className="eta-card eta-card-pending">
