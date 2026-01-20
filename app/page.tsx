@@ -38,6 +38,13 @@ export default function Home() {
       width: 240,
       height: 80,
     },
+    {
+      name: 'Her på øen',
+      href: 'https://herpaaoeen.dk/lokal-app-stormer-frem/',
+      logo: '/images/press-logos/Her-paa-oen-logo.png',
+      width: 240,
+      height: 80,
+    },
   ];
 
   return (
