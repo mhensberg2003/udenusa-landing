@@ -173,8 +173,8 @@ export const translations = {
     pressKit: "Press Kit",
 
     // App ETA Section
-    etaTitle: "App Status",
-    etaAndroid: "Android",
+    etaTitle: "App Status and ETA",
+    etaAndroid: "Android / Google Play",
     etaAndroidStatus: "Under review by Play Store",
     etaAndroidDate: "Expected: January 20–23",
     etaAndroidMarkets: "Worldwide",

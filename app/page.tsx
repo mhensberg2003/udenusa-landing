@@ -19,7 +19,7 @@ export default function Home() {
   const pressMentions = [
     {
       name: 'TV Midtvest',
-      href: 'https://www.tvmidtvest.dk/',
+      href: 'https://www.tvmidtvest.dk/morsoe/21-arigs-app-topper-hitliste-det-er-surrealistisk-e62fd',
       logo: '/images/press-logos/Tv-Midtvest-logo.png',
       width: 240,
       height: 80,
@@ -42,6 +42,20 @@ export default function Home() {
       name: 'Her på øen',
       href: 'https://herpaaoeen.dk/lokal-app-stormer-frem/',
       logo: '/images/press-logos/Her-paa-oen-logo.png',
+      width: 240,
+      height: 80,
+    },
+    {
+      name: 'TV Nord',
+      href: 'https://www.tv2nord.dk/morsoe/usa-app-hitter-ovenpa-gronlandskrise-05607',
+      logo: '/images/press-logos/tv-nord-logo.png',
+      width: 240,
+      height: 80,
+    },
+    {
+      name: 'Limfjord Update',
+      href: 'https://www.limfjordupdate.dk/unge-fra-mors-har-udviklet-ny-af-der-advarer-imod-amerikanske-varer/',
+      logo: '/images/press-logos/limfjord-update-logo.png',
       width: 240,
       height: 80,
     },

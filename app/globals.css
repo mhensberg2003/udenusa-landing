@@ -197,10 +197,15 @@ section {
 .press-track {
   display: flex;
   align-items: center;
-  gap: 52px;
+  gap: 0px;
   width: max-content;
-  animation: pressScroll 22s linear infinite;
+  animation: pressScroll 30s linear infinite;
   padding: 12px 40px;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
 }
 
 .press-logo {
@@ -242,10 +247,10 @@ section {
 
 @keyframes pressScroll {
   0% {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
   }
 }
 
