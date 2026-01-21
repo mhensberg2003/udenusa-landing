@@ -201,10 +201,10 @@ export default function Home() {
             author: {
               '@type': 'Organization',
               name: 'UdenUSA',
-              url: 'https://udenusa.com',
+              url: 'https://udenusa.dk',
             },
             screenshot:
-              'https://udenusa.com/images/screenshot-nonamerican-phonemockup.png',
+              'https://udenusa.dk/images/screenshot-nonamerican-phonemockup.png',
             softwareVersion: '1.0',
             aggregateRating: {
               '@type': 'AggregateRating',
