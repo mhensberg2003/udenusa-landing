@@ -113,9 +113,33 @@ export default function Home() {
           />
           <div className="qr-code-text">{t.qrCode}</div>
         </div>
-      </header>
 
-      <AppETA />
+        <div className="status-arrow">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stopColor="#32d74b" />
+                <stop offset="100%" stopColor="#ffffff" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M20 5 L20 30 M20 30 L12 22 M20 30 L28 22"
+              stroke="url(#arrowGradient)"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </div>
+
+        <AppETA />
+      </header>
 
       <Newsletter />
 

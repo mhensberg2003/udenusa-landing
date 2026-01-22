@@ -19,7 +19,7 @@ body {
 /* Header / Hero */
 header {
   text-align: center;
-  padding: 80px 20px;
+  padding: 80px 20px 40px;
   background-color: rgba(17, 17, 17, 0.8);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -111,7 +111,7 @@ header .description {
 .qr-code-img {
   width: 180px;
   height: 180px;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 10px;
   border-radius: 10px;
   background-color: white;
@@ -698,11 +698,33 @@ footer a:hover {
   color: #fff;
 }
 
+/* Status Arrow */
+.status-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 15px;
+  animation: arrowBounce 2s ease-in-out infinite;
+}
+
+.status-arrow svg {
+  filter: drop-shadow(0 2px 8px rgba(50, 215, 75, 0.3));
+}
+
+@keyframes arrowBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
 /* App ETA Section */
 .app-eta {
   max-width: 800px;
-  margin: 0 auto 40px;
-  padding: 40px 20px;
+  margin: 30px auto 0;
+  padding: 20px 20px 0;
   background-color: transparent;
   border-radius: 12px;
 }
@@ -838,8 +860,8 @@ footer a:hover {
   }
 
   .app-eta {
-    padding: 30px 20px;
-    margin-bottom: 30px;
+    padding: 20px 20px 0;
+    margin: 25px auto 0;
   }
 }
 
@@ -988,15 +1010,24 @@ hr {
 
 @media (max-width: 768px) {
   header {
-    padding: 60px 20px;
+    padding: 60px 20px 30px;
   }
-  
+
   header h1 {
     font-size: 2rem;
   }
-  
+
   header .tagline {
     font-size: 1.2rem;
+  }
+
+  .status-arrow {
+    margin: 15px auto 10px;
+  }
+
+  .status-arrow svg {
+    width: 35px;
+    height: 35px;
   }
   
   section {
