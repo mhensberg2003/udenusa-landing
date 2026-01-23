@@ -74,6 +74,7 @@ export const translations = {
     
     // Footer
     privacyPolicy: "Privatlivspolitik",
+    termsOfService: "Brugsbetingelser",
     pressKit: "Pressekit",
     
     // App ETA Section
@@ -176,6 +177,7 @@ export const translations = {
     
     // Footer
     privacyPolicy: "Privacy Policy",
+    termsOfService: "Terms of Service",
     pressKit: "Press Kit",
 
     // App ETA Section
@@ -289,6 +291,7 @@ export const translations = {
 
     // Footer
     privacyPolicy: "Datenschutzerklärung",
+    termsOfService: "Nutzungsbedingungen",
     pressKit: "Pressekit",
 
     // App ETA Section
@@ -404,6 +407,7 @@ export const translations = {
 
     // Footer
     privacyPolicy: "Politique de confidentialité",
+    termsOfService: "Conditions d'utilisation",
     pressKit: "Kit presse",
 
     // App ETA Section
@@ -519,6 +523,7 @@ export const translations = {
 
     // Footer
     privacyPolicy: "Política de privacidad",
+    termsOfService: "Términos de servicio",
     pressKit: "Kit de prensa",
 
     // App ETA Section
