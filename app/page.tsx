@@ -94,7 +94,7 @@ export default function Home() {
           />
         </div>
         <h1>
-          <span>UdenUSA</span>{' '}
+          <span>{language === 'da' ? 'UdenUSA' : 'NonUSA'}</span>{' '}
           <Image
             src="/images/UdenUSAtransparent.png"
             alt="UdenUSA Logo"
