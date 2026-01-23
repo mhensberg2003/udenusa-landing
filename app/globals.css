@@ -995,6 +995,18 @@ footer a:hover {
   margin-bottom: 8px;
 }
 
+.privacy-list {
+  margin-left: 20px;
+  margin-bottom: 16px;
+  list-style: disc;
+}
+
+.privacy-list li {
+  margin-bottom: 8px;
+  padding: 0;
+  border-bottom: none;
+}
+
 .privacy-footer {
   margin-top: 32px;
   padding-top: 16px;
