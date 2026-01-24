@@ -9,6 +9,7 @@ import FAQ from '@/components/FAQ';
 import Newsletter from '@/components/Newsletter';
 import AppETA from '@/components/AppETA';
 import QRModal from '@/components/QRModal';
+import LogoLoop from '@/components/LogoLoop';
 import { useLanguage } from '@/lib/LanguageContext';
 import Script from 'next/script';
 
@@ -29,44 +30,44 @@ export default function Home() {
 
   const pressMentions = [
     {
-      name: 'TV Midtvest',
+      src: '/images/press-logos/Tv-Midtvest-logo.png',
+      alt: 'TV Midtvest',
       href: 'https://www.tvmidtvest.dk/morsoe/21-arigs-app-topper-hitliste-det-er-surrealistisk-e62fd',
-      logo: '/images/press-logos/Tv-Midtvest-logo.png',
       width: 240,
       height: 80,
     },
     {
-      name: 'Ekstra Bladet',
+      src: '/images/press-logos/Ekstra-Bladet-logo.png',
+      alt: 'Ekstra Bladet',
       href: 'https://ekstrabladet.dk/forbrug/Teknologi/21-aarig-udnytter-trump-kaos-app-stikker-helt-af/11065512',
-      logo: '/images/press-logos/Ekstra-Bladet-logo.png',
       width: 240,
       height: 80,
     },
     {
-      name: 'Computerworld',
+      src: '/images/press-logos/Computer-World-logov2.png',
+      alt: 'Computerworld',
       href: 'https://www.computerworld.dk/art/294241/morgen-briefing-dansk-app-rider-paa-trump-boelge-politiet-dropper-x-iran-slukker-for-droemmen-om-skotlands-uafhaengighed',
-      logo: '/images/press-logos/Computer-World-logov2.png',
       width: 240,
       height: 80,
     },
     {
-      name: 'Her på øen',
+      src: '/images/press-logos/Her-paa-oen-logo.png',
+      alt: 'Her på øen',
       href: 'https://herpaaoeen.dk/lokal-app-stormer-frem/',
-      logo: '/images/press-logos/Her-paa-oen-logo.png',
       width: 240,
       height: 80,
     },
     {
-      name: 'TV Nord',
+      src: '/images/press-logos/tv-nord-logo.png',
+      alt: 'TV Nord',
       href: 'https://www.tv2nord.dk/morsoe/usa-app-hitter-ovenpa-gronlandskrise-05607',
-      logo: '/images/press-logos/tv-nord-logo.png',
       width: 240,
       height: 80,
     },
     {
-      name: 'Limfjord Update',
+      src: '/images/press-logos/limfjord-update-logo.png',
+      alt: 'Limfjord Update',
       href: 'https://www.limfjordupdate.dk/unge-fra-mors-har-udviklet-ny-af-der-advarer-imod-amerikanske-varer/',
-      logo: '/images/press-logos/limfjord-update-logo.png',
       width: 240,
       height: 80,
     },
@@ -169,39 +170,20 @@ export default function Home() {
 
       <Newsletter />
 
-      <section className="press-mentions">
+      <section className="press-section">
         <h2 className="press-title">{t.pressTitle}</h2>
-        <div className="press-marquee" aria-label={t.pressTitle}>
-          <div className="press-mask">
-            <div className="press-track">
-              {pressMentions.concat(pressMentions).map((mention, index) => {
-                const hasLink = Boolean(mention.href);
-
-                return (
-                  <a
-                    key={`${mention.name}-${index}`}
-                    href={hasLink ? mention.href : undefined}
-                    className={`press-logo${hasLink ? '' : ' is-disabled'}`}
-                    target={hasLink ? '_blank' : undefined}
-                    rel={hasLink ? 'noreferrer' : undefined}
-                    aria-label={
-                      hasLink
-                        ? `${mention.name} article`
-                        : `${mention.name} article coming soon`
-                    }
-                  >
-                    <Image
-                      src={mention.logo}
-                      alt={mention.name}
-                      width={mention.width}
-                      height={mention.height}
-                    />
-                  </a>
-                );
-              })}
-            </div>
-          </div>
-        </div>
+        <LogoLoop
+          logos={pressMentions}
+          speed={100}
+          direction="left"
+          logoHeight={80}
+          gap={60}
+          pauseOnHover
+          fadeOut
+          fadeOutColor="#0a0a0a"
+          scaleOnHover
+          ariaLabel={t.pressTitle}
+        />
       </section>
 
       <SocialIcons />

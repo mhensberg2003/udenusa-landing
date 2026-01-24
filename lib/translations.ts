@@ -17,7 +17,7 @@ export const translations = {
     socialMediaNote: "Måske virker det ironisk at bruge amerikansk-ejede sociale medier, men vi vil nå ud til så mange danskere som muligt. Vi vender fjendens egne våben mod dem.",
 
     // Press mentions
-    pressTitle: "Omtalt i medierne",
+    pressTitle: "Omtalt verden over",
     
     // Problem section
     problemTitle: "Hvorfor undgå amerikanske produkter?",
@@ -120,7 +120,7 @@ export const translations = {
     socialMediaNote: "Maybe it seems ironic to use American-owned social media, but we want to reach as many people as possible. We're turning the enemy's own weapons against them.",
 
     // Press mentions
-    pressTitle: "Featured across Denmark",
+    pressTitle: "Featured across the world",
     
     // Problem section
     problemTitle: "Why avoid American products?",
@@ -225,7 +225,7 @@ export const translations = {
       "Vielleicht wirkt es ironisch, US-eigene Social-Media-Plattformen zu nutzen, aber wir wollen so viele Menschen wie möglich erreichen. Wir drehen die Waffen des Gegners gegen ihn.",
 
     // Press mentions
-    pressTitle: "Bekannt aus den Medien",
+    pressTitle: "Weltweit vorgestellt",
 
     // Problem section
     problemTitle: "Warum amerikanische Produkte meiden?",
@@ -341,7 +341,7 @@ export const translations = {
       "C'est peut-être ironique d'utiliser des réseaux sociaux détenus par des entreprises américaines, mais on veut toucher un maximum de personnes. On retourne les armes de l'ennemi contre lui.",
 
     // Press mentions
-    pressTitle: "Vu dans les médias",
+    pressTitle: "Présenté dans le monde entier",
 
     // Problem section
     problemTitle: "Pourquoi éviter les produits américains ?",
@@ -457,7 +457,7 @@ export const translations = {
       "Quizá parezca irónico usar redes sociales de empresas estadounidenses, pero queremos llegar a cuanta más gente mejor. Estamos usando las armas del enemigo contra él.",
 
     // Press mentions
-    pressTitle: "En los medios",
+    pressTitle: "Destacado en todo el mundo",
 
     // Problem section
     problemTitle: "¿Por qué evitar productos estadounidenses?",
