@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Global Reset */
 * {
   box-sizing: border-box;
@@ -64,7 +68,7 @@ body {
 /* Header / Hero */
 header {
   text-align: center;
-  padding: 80px 20px;
+  padding: 80px 20px 40px;
   background-color: rgba(17, 17, 17, 0.8);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -128,21 +132,31 @@ header .description {
 
 .cta-buttons {
   display: flex;
-  gap: 16px;
+  gap: 15px;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 10px;
 }
 
 .cta {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: #32d74b;
   color: #000;
   padding: 14px 30px;
   text-decoration: none;
   font-weight: 600;
   border-radius: 6px;
-  margin-bottom: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
   transition: all 0.2s ease;
+  width: 220px;
+  height: 48px;
+  box-sizing: border-box;
 }
 
 .cta:hover {
@@ -159,6 +173,29 @@ header .description {
   background-color: #0051D5;
 }
 
+.cta-yellow {
+  background-color: #ffd60a;
+  color: #000;
+}
+
+.cta-yellow:hover {
+  background-color: #ffc300;
+}
+
+.cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.button-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .qr-code {
   margin-top: 20px;
   font-size: 14px;
@@ -172,7 +209,7 @@ header .description {
 .qr-code-img {
   width: 180px;
   height: 180px;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 10px;
   border-radius: 10px;
   background-color: white;
@@ -201,15 +238,16 @@ section {
   border-radius: 12px;
 }
 
-/* Press mentions */
-.press-mentions {
-  max-width: 980px;
-  padding: 20px 0 30px;
+/* Press Section */
+.press-section {
+  max-width: 900px;
+  padding: 40px 0 60px;
   background: transparent;
   border-radius: 0;
   border: none;
   box-shadow: none;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .press-title {
@@ -219,95 +257,7 @@ section {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #32d74b;
-  margin-bottom: 20px;
-}
-
-.press-marquee {
-  position: relative;
-  overflow: hidden;
-  padding: 14px 0 24px;
-}
-
-.press-mask {
-  width: 100%;
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
-}
-
-.press-marquee::before,
-.press-marquee::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 120px;
-  height: 100%;
-  z-index: 2;
-  pointer-events: none;
-}
-
-.press-marquee::before {
-  left: 0;
-  background: linear-gradient(90deg, rgba(50, 215, 75, 0.18), rgba(50, 215, 75, 0));
-}
-
-.press-marquee::after {
-  right: 0;
-  background: linear-gradient(-90deg, rgba(50, 215, 75, 0.18), rgba(50, 215, 75, 0));
-}
-
-.press-track {
-  display: flex;
-  align-items: center;
-  gap: 52px;
-  width: max-content;
-  animation: pressScroll 22s linear infinite;
-  padding: 12px 40px;
-}
-
-.press-logo {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 240px;
-  height: 92px;
-  padding: 14px 30px;
-  border-radius: 999px;
-  background: transparent;
-  border: none;
-  text-decoration: none;
-  transition: transform 0.2s ease, filter 0.2s ease, opacity 0.2s ease;
-}
-
-.press-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  max-width: 240px;
-  filter: none;
-  opacity: 0.9;
-}
-
-.press-logo:hover {
-  transform: translateY(-3px) scale(1.02);
-}
-
-.press-logo:hover img {
-  filter: none;
-  opacity: 1;
-}
-
-.press-logo.is-disabled {
-  pointer-events: none;
-  opacity: 0.6;
-}
-
-@keyframes pressScroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  margin-bottom: 40px;
 }
 
 h2 {
@@ -754,11 +704,33 @@ footer a:hover {
   color: #fff;
 }
 
+/* Status Arrow */
+.status-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 15px;
+  animation: arrowBounce 2s ease-in-out infinite;
+}
+
+.status-arrow svg {
+  filter: drop-shadow(0 2px 8px rgba(50, 215, 75, 0.3));
+}
+
+@keyframes arrowBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
 /* App ETA Section */
 .app-eta {
   max-width: 800px;
-  margin: 0 auto 40px;
-  padding: 40px 20px;
+  margin: 30px auto 0;
+  padding: 20px 20px 0;
   background-color: transparent;
   border-radius: 12px;
 }
@@ -894,8 +866,8 @@ footer a:hover {
   }
 
   .app-eta {
-    padding: 30px 20px;
-    margin-bottom: 30px;
+    padding: 20px 20px 0;
+    margin: 25px auto 0;
   }
 }
 
@@ -989,6 +961,18 @@ footer a:hover {
   margin-bottom: 8px;
 }
 
+.privacy-list {
+  margin-left: 20px;
+  margin-bottom: 16px;
+  list-style: disc;
+}
+
+.privacy-list li {
+  margin-bottom: 8px;
+  padding: 0;
+  border-bottom: none;
+}
+
 .privacy-footer {
   margin-top: 32px;
   padding-top: 16px;
@@ -1044,15 +1028,37 @@ hr {
 
 @media (max-width: 768px) {
   header {
-    padding: 60px 20px;
+    padding: 60px 20px 30px;
   }
-  
+
   header h1 {
     font-size: 2rem;
   }
-  
+
   header .tagline {
     font-size: 1.2rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .cta {
+    width: 100%;
+    max-width: 300px;
+    height: 48px;
+  }
+
+  .status-arrow {
+    margin: 15px auto 10px;
+  }
+
+  .status-arrow svg {
+    width: 35px;
+    height: 35px;
   }
   
   section {
@@ -1060,26 +1066,13 @@ hr {
     margin: 0 15px 40px;
   }
 
-  .press-mentions {
-    padding: 32px 0 24px;
+  .press-section {
+    padding: 32px 0 40px;
   }
 
   .press-title {
     font-size: 1.1rem;
-  }
-
-  .press-track {
-    gap: 24px;
-  }
-
-  .press-logo {
-    min-width: 180px;
-    height: 72px;
-    padding: 12px 20px;
-  }
-
-  .press-logo img {
-    max-width: 180px;
+    margin-bottom: 30px;
   }
 
   .language-switcher {

@@ -75,7 +75,7 @@ function DanishContent({ backToHome }: { backToHome: string }) {
         <h3 className="subsection-title">Produktanalyse</h3>
         <p className="privacy-text">
           Billeder, du tager med appen, sendes til vores analyseservice (drevet
-          af OpenAI) for at identificere produktets oprindelse og foreslå danske
+          af OpenRouter) for at identificere produktets oprindelse og foreslå danske
           alternativer til amerikanske produkter.
         </p>
 
@@ -101,13 +101,19 @@ function DanishContent({ backToHome }: { backToHome: string }) {
         </p>
         <ul className="bullet-list">
           <li className="bullet-item">
-            OpenAI: Billeder sendes til OpenAI for produktanalyse
+            OpenRouter: Billeder sendes til OpenRouter for produktanalyse
           </li>
           <li className="bullet-item">
             Firebase: Brugsdata og app-konfiguration
           </li>
           <li className="bullet-item">
             Superwall: Abonnementshåndtering og betalingsprocessering
+          </li>
+          <li className="bullet-item">
+            Apple: Abonnementshåndtering via App Store
+          </li>
+          <li className="bullet-item">
+            Device identifiers: For at begrænse gratis scanninger per enhed
           </li>
         </ul>
 
@@ -170,6 +176,13 @@ function DanishContent({ backToHome }: { backToHome: string }) {
           privatlivspolitik, kontakt os venligst på:
         </p>
         <p className="privacy-text">E-mail: info@nonusa.org</p>
+        <p className="privacy-text">Adresse: Vocata Studio, Danmark</p>
+
+        <h2 className="section-title">Dataopbevaring</h2>
+        <p className="privacy-text">
+          Vi opbevarer kun dine oplysninger, så længe det er nødvendigt til de
+          formål, der er beskrevet i denne politik.
+        </p>
       </div>
 
       <div className="privacy-footer">
@@ -235,7 +248,7 @@ function EnglishContent({ backToHome }: { backToHome: string }) {
         <h3 className="subsection-title">Product Analysis</h3>
         <p className="privacy-text">
           Images you take with the app are sent to our analysis service (powered
-          by OpenAI) to identify the product&apos;s origin and suggest Danish
+          by OpenRouter) to identify the product&apos;s origin and suggest Danish
           alternatives to American products.
         </p>
 
@@ -261,13 +274,19 @@ function EnglishContent({ backToHome }: { backToHome: string }) {
         </p>
         <ul className="bullet-list">
           <li className="bullet-item">
-            OpenAI: Images are sent to OpenAI for product analysis
+            OpenRouter: Images are sent to OpenRouter for product analysis
           </li>
           <li className="bullet-item">
             Firebase: Usage data and app configuration
           </li>
           <li className="bullet-item">
             Superwall: Subscription management and payment processing
+          </li>
+          <li className="bullet-item">
+            Apple: Subscription management via App Store
+          </li>
+          <li className="bullet-item">
+            Device identifiers: To limit free scans per device
           </li>
         </ul>
 
@@ -325,6 +344,13 @@ function EnglishContent({ backToHome }: { backToHome: string }) {
           please contact us at:
         </p>
         <p className="privacy-text">Email: info@nonusa.org</p>
+        <p className="privacy-text">Address: Vocata Studio, Denmark</p>
+
+        <h2 className="section-title">Data Retention</h2>
+        <p className="privacy-text">
+          We only retain your information for as long as necessary for the
+          purposes described in this policy.
+        </p>
       </div>
 
       <div className="privacy-footer">

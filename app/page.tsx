@@ -9,8 +9,20 @@ import FAQ from '@/components/FAQ';
 import Newsletter from '@/components/Newsletter';
 import AppETA from '@/components/AppETA';
 import QRModal from '@/components/QRModal';
+import LogoLoop from '@/components/LogoLoop';
 import { useLanguage } from '@/lib/LanguageContext';
 import Script from 'next/script';
+
+const AndroidIcon = () => (
+  <svg
+    className="button-icon"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M6,18c0,0.55 0.45,1 1,1h1v3.5c0,0.83 0.67,1.5 1.5,1.5s1.5,-0.67 1.5,-1.5V19h2v3.5c0,0.83 0.67,1.5 1.5,1.5s1.5,-0.67 1.5,-1.5V19h1c0.55,0 1,-0.45 1,-1V8H6v10zM3.5,8C2.67,8 2,8.67 2,9.5v7c0,0.83 0.67,1.5 1.5,1.5S5,17.33 5,16.5v-7C5,8.67 4.33,8 3.5,8zM20.5,8c-0.83,0 -1.5,0.67 -1.5,1.5v7c0,0.83 0.67,1.5 1.5,1.5s1.5,-0.67 1.5,-1.5v-7c0,-0.83 -0.67,-1.5 -1.5,-1.5zM15.53,2.16l1.3,-1.3c0.2,-0.2 0.2,-0.51 0,-0.71 -0.2,-0.2 -0.51,-0.2 -0.71,0l-1.48,1.48C13.85,1.23 12.95,1 12,1c-0.96,0 -1.86,0.23 -2.66,0.63L7.85,0.15c-0.2,-0.2 -0.51,-0.2 -0.71,0 -0.2,0.2 -0.2,0.51 0,0.71l1.31,1.31C6.97,3.26 6,5.01 6,7h12c0,-1.99 -0.97,-3.75 -2.47,-4.84zM10,5H9V4h1v1zM15,5h-1V4h1v1z"/>
+  </svg>
+);
 
 export default function Home() {
   const { t, language } = useLanguage();
@@ -18,23 +30,44 @@ export default function Home() {
 
   const pressMentions = [
     {
-      name: 'TV Midtvest',
-      href: 'https://www.tvmidtvest.dk/',
-      logo: '/images/press-logos/Tv-Midtvest-logo.png',
+      src: '/images/press-logos/Tv-Midtvest-logo.png',
+      alt: 'TV Midtvest',
+      href: 'https://www.tvmidtvest.dk/morsoe/21-arigs-app-topper-hitliste-det-er-surrealistisk-e62fd',
       width: 240,
       height: 80,
     },
     {
-      name: 'Ekstra Bladet',
+      src: '/images/press-logos/Ekstra-Bladet-logo.png',
+      alt: 'Ekstra Bladet',
       href: 'https://ekstrabladet.dk/forbrug/Teknologi/21-aarig-udnytter-trump-kaos-app-stikker-helt-af/11065512',
-      logo: '/images/press-logos/Ekstra-Bladet-logo.png',
       width: 240,
       height: 80,
     },
     {
-      name: 'Computerworld',
+      src: '/images/press-logos/Computer-World-logov2.png',
+      alt: 'Computerworld',
       href: 'https://www.computerworld.dk/art/294241/morgen-briefing-dansk-app-rider-paa-trump-boelge-politiet-dropper-x-iran-slukker-for-droemmen-om-skotlands-uafhaengighed',
-      logo: '/images/press-logos/Computer-World-logov2.png',
+      width: 240,
+      height: 80,
+    },
+    {
+      src: '/images/press-logos/Her-paa-oen-logo.png',
+      alt: 'Her på øen',
+      href: 'https://herpaaoeen.dk/lokal-app-stormer-frem/',
+      width: 240,
+      height: 80,
+    },
+    {
+      src: '/images/press-logos/tv-nord-logo.png',
+      alt: 'TV Nord',
+      href: 'https://www.tv2nord.dk/morsoe/usa-app-hitter-ovenpa-gronlandskrise-05607',
+      width: 240,
+      height: 80,
+    },
+    {
+      src: '/images/press-logos/limfjord-update-logo.png',
+      alt: 'Limfjord Update',
+      href: 'https://www.limfjordupdate.dk/unge-fra-mors-har-udviklet-ny-af-der-advarer-imod-amerikanske-varer/',
       width: 240,
       height: 80,
     },
@@ -71,7 +104,7 @@ export default function Home() {
           />
         </div>
         <h1>
-          <span>UdenUSA</span>{' '}
+          <span>{language === 'da' ? 'UdenUSA' : 'NonUSA'}</span>{' '}
           <Image
             src="/images/UdenUSAtransparent.png"
             alt="UdenUSA Logo"
@@ -98,6 +131,19 @@ export default function Home() {
           >
             {t.ctaWebButton}
           </a>
+          <button
+            className="cta cta-yellow"
+            onClick={() => {
+              document.getElementById('status')?.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }}
+          >
+            <span className="cta-content">
+              {t.ctaStatusButton} <AndroidIcon /> {t.ctaStatusButtonEnd}
+            </span>
+          </button>
         </div>
         <p className="app-availability">{t.appAvailability}</p>
         <div className="qr-code">
@@ -111,45 +157,50 @@ export default function Home() {
           />
           <div className="qr-code-text">{t.qrCode}</div>
         </div>
-      </header>
 
-      <AppETA />
+        <div className="status-arrow">
+          <svg
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <linearGradient id="arrowGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stopColor="#32d74b" />
+                <stop offset="100%" stopColor="#ffffff" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M20 5 L20 30 M20 30 L12 22 M20 30 L28 22"
+              stroke="url(#arrowGradient)"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </div>
+
+        <AppETA />
+      </header>
 
       <Newsletter />
 
-      <section className="press-mentions">
+      <section className="press-section">
         <h2 className="press-title">{t.pressTitle}</h2>
-        <div className="press-marquee" aria-label={t.pressTitle}>
-          <div className="press-mask">
-            <div className="press-track">
-              {pressMentions.concat(pressMentions).map((mention, index) => {
-                const hasLink = Boolean(mention.href);
-
-                return (
-                  <a
-                    key={`${mention.name}-${index}`}
-                    href={hasLink ? mention.href : undefined}
-                    className={`press-logo${hasLink ? '' : ' is-disabled'}`}
-                    target={hasLink ? '_blank' : undefined}
-                    rel={hasLink ? 'noreferrer' : undefined}
-                    aria-label={
-                      hasLink
-                        ? `${mention.name} article`
-                        : `${mention.name} article coming soon`
-                    }
-                  >
-                    <Image
-                      src={mention.logo}
-                      alt={mention.name}
-                      width={mention.width}
-                      height={mention.height}
-                    />
-                  </a>
-                );
-              })}
-            </div>
-          </div>
-        </div>
+        <LogoLoop
+          logos={pressMentions}
+          speed={100}
+          direction="left"
+          logoHeight={80}
+          gap={60}
+          pauseOnHover
+          fadeOut
+          fadeOutColor="#0a0a0a"
+          scaleOnHover
+          ariaLabel={t.pressTitle}
+        />
       </section>
 
       <SocialIcons />
@@ -199,10 +250,10 @@ export default function Home() {
             author: {
               '@type': 'Organization',
               name: 'UdenUSA',
-              url: 'https://udenusa.com',
+              url: 'https://udenusa.dk',
             },
             screenshot:
-              'https://udenusa.com/images/screenshot-nonamerican-phonemockup.png',
+              'https://udenusa.dk/images/screenshot-nonamerican-phonemockup.png',
             softwareVersion: '1.0',
             aggregateRating: {
               '@type': 'AggregateRating',

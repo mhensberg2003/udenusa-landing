@@ -24,6 +24,24 @@ export default function LanguageSwitcher() {
       >
         🇬🇧 English
       </button>
+      <button
+        className={`lang-btn ${language === 'de' ? 'active' : ''}`}
+        onClick={() => handleLanguageChange('de')}
+      >
+        🇩🇪 Deutsch
+      </button>
+      <button
+        className={`lang-btn ${language === 'fr' ? 'active' : ''}`}
+        onClick={() => handleLanguageChange('fr')}
+      >
+        🇫🇷 Français
+      </button>
+      <button
+        className={`lang-btn ${language === 'es' ? 'active' : ''}`}
+        onClick={() => handleLanguageChange('es')}
+      >
+        🇪🇸 Español
+      </button>
     </div>
   );
 }

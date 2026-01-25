@@ -106,8 +106,15 @@ function DanishContent({ backToHome }: { backToHome: string }) {
         <h2 className="section-title">4. Screenshots & Logoer</h2>
         <ul className="bullet-list">
           <li className="bullet-item">
-            <strong>Link til højtopløste billeder</strong> (Google Drive, Dropbox
-            eller anden filhosting)
+            <strong>Link til højtopløste billeder</strong>:{' '}
+            <a
+              href="https://drive.proton.me/urls/8Y6ZV9YR80#YucE49znyHVy"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: '#32d74b', textDecoration: 'none' }}
+            >
+              Press Assets
+            </a>
             <ul className="bullet-list">
               <li className="bullet-item">App-interface (scanning-resultat)</li>
               <li className="bullet-item">App-ikon/logo</li>
@@ -190,7 +197,7 @@ function DanishContent({ backToHome }: { backToHome: string }) {
           </li>
           <li className="bullet-item">
             <strong>Hjemmeside</strong>:{' '}
-            <a href="http://udenusa.vocata.app/">http://udenusa.vocata.app/</a>
+            <a href="https://udenusa.dk/">https://udenusa.dk/</a>
           </li>
         </ul>
       </div>
@@ -431,15 +438,24 @@ function EnglishContent({ backToHome }: { backToHome: string }) {
         <h2 className="section-title">10. Press Contact and Downloads</h2>
         <ul className="bullet-list">
           <li className="bullet-item">
-            <strong>Press Kit / Images / Logo</strong>: [Link to high-resolution
-            images & logos]
+            <strong>Press Kit / Images / Logo</strong>:{' '}
+            <a
+              href="https://drive.proton.me/urls/8Y6ZV9YR80#YucE49znyHVy"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: '#32d74b', textDecoration: 'none' }}
+            >
+              Press Assets
+            </a>
           </li>
           <li className="bullet-item">
-            <strong>Contact Person</strong>: [Name – Email – Phone]
+            <strong>Contact Person</strong>: Jonas Pipper (Founder)
+            <br />
+            <strong>Email</strong>: info@nonusa.org
           </li>
           <li className="bullet-item">
             <strong>Website</strong>:{' '}
-            <a href="https://udenusa.vocata.app/">udenusa.vocata.app/</a>
+            <a href="https://nonusa.org/">nonusa.org/</a>
           </li>
           <li className="bullet-item">
             <strong>Download iOS</strong>:{' '}

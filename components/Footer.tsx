@@ -14,6 +14,10 @@ export default function Footer() {
           {t.privacyPolicy}
         </Link>{' '}
         |{' '}
+        <Link href="/tos" className="tos-link">
+          {t.termsOfService}
+        </Link>{' '}
+        |{' '}
         <Link href="/pressekit" className="pressekit-link">
           {t.pressKit}
         </Link>

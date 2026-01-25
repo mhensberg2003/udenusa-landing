@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: 'UdenUSA - Find alternativer til amerikanske produkter',
     description: 'UdenUSA hjælper dig med at identificere amerikanske produkter og finder alternativer fra resten af verden.',
     images: ['/images/UdenUSAtransparent.png'],
-    url: 'https://udenusa.com/',
+    url: 'https://udenusa.dk/',
     type: 'website',
   },
   twitter: {
@@ -43,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="da" suppressHydrationWarning>
       <head>
-        <link rel="canonical" href="https://udenusa.com/" />
+        <link rel="canonical" href="https://udenusa.dk/" />
         <link
           rel="stylesheet"
           href="https://sibforms.com/forms/end-form/build/sib-styles.css"
