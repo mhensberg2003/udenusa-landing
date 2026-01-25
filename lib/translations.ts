@@ -93,8 +93,8 @@ export const translations = {
     etaIosDate: "Udgivet: 19. januar 2026",
     etaIosMarkets: "Hele verden",
     etaAndroid: "Android",
-    etaAndroidStatus: "Udgivet nu",
-    etaAndroidDate: "Udgivet: 25. januar 2026",
+    etaAndroidStatus: "In review",
+    etaAndroidDate: "Estimeret: 25 - 27. januar",
     etaAndroidMarkets: "Hele verden",
 
     // Newsletter
@@ -205,8 +205,8 @@ export const translations = {
     etaIosDate: "Released: January 19, 2026",
     etaIosMarkets: "Worldwide",
     etaAndroid: "Android",
-    etaAndroidStatus: "Available now",
-    etaAndroidDate: "Released: January 25, 2026",
+    etaAndroidStatus: "In review",
+    etaAndroidDate: "Estimated: January 25 - 27",
     etaAndroidMarkets: "Worldwide",
 
     // Newsletter
@@ -227,11 +227,16 @@ export const translations = {
     // Meta
     pageTitle: "UdenUSA - Finde Alternativen zu amerikanischen Produkten",
 
+    // Banner
+    bannerText: "🎉 Die Web-App ist jetzt da! Nutze UdenUSA auf allen Geräten direkt im Browser",
+    bannerButton: "Jetzt ausprobieren",
+
     // Header
     tagline: "Unterstützt du Trump, wenn du einkaufst?",
     description:
       "UdenUSA hilft dir, amerikanische Produkte zu erkennen und Alternativen aus dem Rest der Welt zu finden.",
     ctaButton: "Herunterladen",
+    ctaWebButton: "Web-App öffnen",
     ctaStatusButton: "Prüfe",
     ctaStatusButtonEnd: "Status",
     qrCode: "Scanne den QR-Code, um die App herunterzuladen",
@@ -314,6 +319,10 @@ export const translations = {
 
     // App ETA Section
     etaTitle: "App-Status & ETA",
+    etaWeb: "Web-App",
+    etaWebStatus: "Jetzt verfügbar",
+    etaWebDate: "Veröffentlicht: 25. Januar 2026",
+    etaWebMarkets: "Weltweit",
     etaAndroid: "Android / Google Play",
     etaAndroidStatus: "In Prüfung im Play Store",
     etaAndroidDate: "Erwartet: 23.–24. Januar",
@@ -343,11 +352,16 @@ export const translations = {
     // Meta
     pageTitle: "UdenUSA - Trouve des alternatives aux produits américains",
 
+    // Banner
+    bannerText: "🎉 La web app est dispo ! Utilise UdenUSA sur tous tes appareils directement dans ton navigateur",
+    bannerButton: "Essayer maintenant",
+
     // Header
     tagline: "Tu soutiens Trump quand tu fais tes achats ?",
     description:
       "UdenUSA t'aide à identifier les produits américains et à trouver des alternatives du reste du monde.",
     ctaButton: "Télécharger",
+    ctaWebButton: "Ouvrir la web app",
     ctaStatusButton: "Voir",
     ctaStatusButtonEnd: "le statut",
     qrCode: "Scanne le QR code pour télécharger l'app",
@@ -430,6 +444,10 @@ export const translations = {
 
     // App ETA Section
     etaTitle: "Statut de l'app & ETA",
+    etaWeb: "Web app",
+    etaWebStatus: "Disponible maintenant",
+    etaWebDate: "Publié : 25 janvier 2026",
+    etaWebMarkets: "Dans le monde entier",
     etaAndroid: "Android / Google Play",
     etaAndroidStatus: "En cours de validation sur le Play Store",
     etaAndroidDate: "Prévu : 23–24 janvier",
@@ -459,11 +477,16 @@ export const translations = {
     // Meta
     pageTitle: "UdenUSA - Encuentra alternativas a productos estadounidenses",
 
+    // Banner
+    bannerText: "🎉 ¡La web app ya está disponible! Usa UdenUSA en todos tus dispositivos directamente en tu navegador",
+    bannerButton: "Probar ahora",
+
     // Header
     tagline: "¿Estás apoyando a Trump cuando compras?",
     description:
       "UdenUSA te ayuda a identificar productos estadounidenses y a encontrar alternativas del resto del mundo.",
     ctaButton: "Descargar",
+    ctaWebButton: "Abrir web app",
     ctaStatusButton: "Ver",
     ctaStatusButtonEnd: "estado",
     qrCode: "Escanea el código QR para descargar la app",
@@ -546,6 +569,10 @@ export const translations = {
 
     // App ETA Section
     etaTitle: "Estado de la app & ETA",
+    etaWeb: "Aplicación web",
+    etaWebStatus: "Disponible ahora",
+    etaWebDate: "Publicado: 25 de enero de 2026",
+    etaWebMarkets: "En todo el mundo",
     etaAndroid: "Android / Google Play",
     etaAndroidStatus: "En revisión en Play Store",
     etaAndroidDate: "Previsto: 23–24 de enero",

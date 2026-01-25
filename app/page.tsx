@@ -131,19 +131,6 @@ export default function Home() {
           >
             {t.ctaWebButton}
           </a>
-          <button
-            className="cta cta-yellow"
-            onClick={() => {
-              document.getElementById('status')?.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-              });
-            }}
-          >
-            <span className="cta-content">
-              {t.ctaStatusButton} <AndroidIcon /> {t.ctaStatusButtonEnd}
-            </span>
-          </button>
         </div>
         <p className="app-availability">{t.appAvailability}</p>
         <div className="qr-code">
