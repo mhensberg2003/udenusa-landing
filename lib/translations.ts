@@ -2,13 +2,18 @@ export const translations = {
   da: {
     // Meta
     pageTitle: "UdenUSA - Find alternativer til amerikanske produkter",
-    
+
+    // Banner
+    bannerText: "🎉 Web appen er nu ude! Brug UdenUSA på alle enheder direkte i din browser",
+    bannerButton: "Prøv nu",
+
     // Header
     tagline: "Støtter du Trump, når du handler?",
     description: "UdenUSA hjælper dig med at identificere amerikanske produkter og finder alternativer fra resten af verden.",
     ctaButton: "Hent UdenUSA",
+    ctaWebButton: "Åbn webapp",
     qrCode: "Scan QR-koden for at hente appen",
-    appAvailability: "Tilgængelig på iPhone – Android kommer snart",
+    appAvailability: "Nu tilgængelig på web på alle enheder • Kommer snart på Play Store",
     
     // Social media
     socialMediaHeading: "Følg os på sociale medier",
@@ -76,14 +81,18 @@ export const translations = {
     
     // App ETA Section
     etaTitle: "App Status",
-    etaAndroid: "Android",
-    etaAndroidStatus: "Til review hos Play Store",
-    etaAndroidDate: "Forventet: 20.–23. januar",
-    etaAndroidMarkets: "Hele verden",
+    etaWeb: "Web app",
+    etaWebStatus: "Tilgængelig nu",
+    etaWebDate: "Udgivet: 25. januar 2026",
+    etaWebMarkets: "Hele verden",
     etaIos: "iOS/Apple",
     etaIosStatus: "Tilgængelig nu",
     etaIosDate: "Udgivet: 19. januar 2026",
     etaIosMarkets: "Hele verden",
+    etaAndroid: "Android",
+    etaAndroidStatus: "Udgivet nu",
+    etaAndroidDate: "Udgivet: 25. januar 2026",
+    etaAndroidMarkets: "Hele verden",
 
     // Newsletter
     newsletterTitle: "Venteliste til Android & nye funktioner",
@@ -100,13 +109,18 @@ export const translations = {
   en: {
     // Meta
     pageTitle: "UdenUSA - Find alternatives to American products",
-    
+
+    // Banner
+    bannerText: "🎉 Web app now available! Use UdenUSA on all devices directly in your browser",
+    bannerButton: "Try now",
+
     // Header
     tagline: "Are you supporting Trump when you shop?",
     description: "UdenUSA helps you identify American products and finds alternatives from the rest of the world.",
     ctaButton: "Download UdenUSA",
+    ctaWebButton: "Open Web App",
     qrCode: "Scan the QR code to download the app",
-    appAvailability: "Available on iPhone, Android coming soon",
+    appAvailability: "Now available on web on all devices • Coming soon on Play Store",
     
     // Social media
     socialMediaHeading: "Follow us on social media",
@@ -174,14 +188,18 @@ export const translations = {
 
     // App ETA Section
     etaTitle: "App Status",
-    etaAndroid: "Android",
-    etaAndroidStatus: "Under review by Play Store",
-    etaAndroidDate: "Expected: January 20–23",
-    etaAndroidMarkets: "Worldwide",
+    etaWeb: "Web app",
+    etaWebStatus: "Available now",
+    etaWebDate: "Released: January 25, 2026",
+    etaWebMarkets: "Worldwide",
     etaIos: "iOS/Apple",
     etaIosStatus: "Available now",
     etaIosDate: "Released: January 19, 2026",
     etaIosMarkets: "Worldwide",
+    etaAndroid: "Android",
+    etaAndroidStatus: "Available now",
+    etaAndroidDate: "Released: January 25, 2026",
+    etaAndroidMarkets: "Worldwide",
 
     // Newsletter
     newsletterTitle: "Waitlist for Android & new features",

@@ -42,6 +42,15 @@ export default function Home() {
 
   return (
     <>
+      <div className="announcement-banner">
+        <div className="banner-content">
+          <span className="banner-text">{t.bannerText}</span>
+          <a href="https://app.udenusa.dk" className="banner-button" target="_blank" rel="noreferrer">
+            {t.bannerButton}
+          </a>
+        </div>
+      </div>
+
       <LanguageSwitcher />
 
       <header>
@@ -73,13 +82,23 @@ export default function Home() {
         </h1>
         <p className="tagline">{t.tagline}</p>
         <p className="description">{t.description}</p>
-        <a
-          href="https://apps.apple.com/app/id6742805777"
-          className="cta"
-          id="downloadButton"
-        >
-          {t.ctaButton}
-        </a>
+        <div className="cta-buttons">
+          <a
+            href="https://apps.apple.com/app/id6742805777"
+            className="cta"
+            id="downloadButton"
+          >
+            {t.ctaButton}
+          </a>
+          <a
+            href="https://app.udenusa.dk"
+            className="cta cta-web"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {t.ctaWebButton}
+          </a>
+        </div>
         <p className="app-availability">{t.appAvailability}</p>
         <div className="qr-code">
           <Image
