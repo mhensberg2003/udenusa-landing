@@ -4,7 +4,7 @@ export const translations = {
     pageTitle: "UdenUSA - Find alternativer til amerikanske produkter",
 
     // Banner
-    bannerText: "🎉 Web appen er nu ude! Brug UdenUSA på alle enheder direkte i din browser",
+    bannerText: "🎉 Web appen er nu ude! Brug UdenUSA på alle enheder 🎉",
     bannerButton: "Prøv nu",
 
     // Header
