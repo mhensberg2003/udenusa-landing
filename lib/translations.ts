@@ -94,7 +94,7 @@ export const translations = {
     etaIosMarkets: "Hele verden",
     etaAndroid: "Android",
     etaAndroidStatus: "In review",
-    etaAndroidDate: "Estimeret: 25 - 27. januar",
+    etaAndroidDate: "Estimeret: 26 - 29. januar",
     etaAndroidMarkets: "Hele verden",
 
     // Newsletter
