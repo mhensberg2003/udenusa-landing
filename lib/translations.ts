@@ -4,7 +4,7 @@ export const translations = {
     pageTitle: "UdenUSA - Find alternativer til amerikanske produkter",
 
     // Banner
-    bannerText: "🎉 Web appen er nu ude! Brug UdenUSA på alle enheder 🎉",
+    bannerText: "🎉 Android appen er nu ude! Hent UdenUSA på Play Store 🎉",
     bannerButton: "Prøv nu",
 
     // Header
@@ -15,7 +15,7 @@ export const translations = {
     ctaStatusButton: "Tjek",
     ctaStatusButtonEnd: "Status",
     qrCode: "Scan QR-koden for at hente appen",
-    appAvailability: "Nu tilgængelig på web på alle enheder • Kommer snart på Play Store",
+    appAvailability: "Nu tilgængelig på web, iOS og Android",
     
     // Social media
     socialMediaHeading: "Følg os på sociale medier",
@@ -93,8 +93,8 @@ export const translations = {
     etaIosDate: "Udgivet: 19. januar 2026",
     etaIosMarkets: "Hele verden",
     etaAndroid: "Android",
-    etaAndroidStatus: "In review",
-    etaAndroidDate: "Estimeret: 26 - 29. januar",
+    etaAndroidStatus: "Tilgængelig nu",
+    etaAndroidDate: "Udgivet: 27. januar 2026",
     etaAndroidMarkets: "Hele verden",
 
     // Newsletter
@@ -116,7 +116,7 @@ export const translations = {
     pageTitle: "UdenUSA - Find alternatives to American products",
 
     // Banner
-    bannerText: "🎉 Web app now available! Use UdenUSA on all devices directly in your browser",
+    bannerText: "🎉 Android app now available! Get UdenUSA on Play Store",
     bannerButton: "Try now",
 
     // Header
@@ -127,7 +127,7 @@ export const translations = {
     ctaStatusButton: "Check",
     ctaStatusButtonEnd: "Status",
     qrCode: "Scan the QR code to download the app",
-    appAvailability: "Now available on web on all devices • Coming soon on Play Store",
+    appAvailability: "Now available on iOS, Android, and web",
     
     // Social media
     socialMediaHeading: "Follow us on social media",
@@ -198,15 +198,15 @@ export const translations = {
     etaTitle: "App Status",
     etaWeb: "Web app",
     etaWebStatus: "Available now",
-    etaWebDate: "Released: January 25, 2026",
+    etaWebDate: "Released: 25th of January 2026",
     etaWebMarkets: "Worldwide",
     etaIos: "iOS/Apple",
     etaIosStatus: "Available now",
-    etaIosDate: "Released: January 19, 2026",
+    etaIosDate: "Released: 19th of January 2026",
     etaIosMarkets: "Worldwide",
     etaAndroid: "Android",
-    etaAndroidStatus: "In review",
-    etaAndroidDate: "Estimated: January 25 - 27",
+    etaAndroidStatus: "Available now",
+    etaAndroidDate: "Released: 27th of January 2026",
     etaAndroidMarkets: "Worldwide",
 
     // Newsletter
@@ -228,7 +228,7 @@ export const translations = {
     pageTitle: "UdenUSA - Finde Alternativen zu amerikanischen Produkten",
 
     // Banner
-    bannerText: "🎉 Die Web-App ist jetzt da! Nutze UdenUSA auf allen Geräten direkt im Browser",
+    bannerText: "🎉 Die Android-App ist jetzt da! Hol dir UdenUSA im Play Store",
     bannerButton: "Jetzt ausprobieren",
 
     // Header
@@ -240,7 +240,7 @@ export const translations = {
     ctaStatusButton: "Prüfe",
     ctaStatusButtonEnd: "Status",
     qrCode: "Scanne den QR-Code, um die App herunterzuladen",
-    appAvailability: "Verfügbar auf iPhone – Android kommt bald",
+    appAvailability: "Verfügbar auf iOS, Android und Web",
 
     // Social media
     socialMediaHeading: "Folge uns auf Social Media",
@@ -324,8 +324,8 @@ export const translations = {
     etaWebDate: "Veröffentlicht: 25. Januar 2026",
     etaWebMarkets: "Weltweit",
     etaAndroid: "Android / Google Play",
-    etaAndroidStatus: "In Prüfung im Play Store",
-    etaAndroidDate: "Erwartet: 23.–24. Januar",
+    etaAndroidStatus: "Jetzt verfügbar",
+    etaAndroidDate: "Veröffentlicht: 27. Januar 2026",
     etaAndroidMarkets: "Weltweit",
     etaIos: "iOS/Apple",
     etaIosStatus: "Jetzt verfügbar",
@@ -353,7 +353,7 @@ export const translations = {
     pageTitle: "UdenUSA - Trouve des alternatives aux produits américains",
 
     // Banner
-    bannerText: "🎉 La web app est dispo ! Utilise UdenUSA sur tous tes appareils directement dans ton navigateur",
+    bannerText: "🎉 L'app Android est dispo ! Télécharge UdenUSA sur le Play Store",
     bannerButton: "Essayer maintenant",
 
     // Header
@@ -365,7 +365,7 @@ export const translations = {
     ctaStatusButton: "Voir",
     ctaStatusButtonEnd: "le statut",
     qrCode: "Scanne le QR code pour télécharger l'app",
-    appAvailability: "Disponible sur iPhone – Android arrive bientôt",
+    appAvailability: "Disponible sur iOS, Android et web",
 
     // Social media
     socialMediaHeading: "Suis-nous sur les réseaux sociaux",
@@ -449,8 +449,8 @@ export const translations = {
     etaWebDate: "Publié : 25 janvier 2026",
     etaWebMarkets: "Dans le monde entier",
     etaAndroid: "Android / Google Play",
-    etaAndroidStatus: "En cours de validation sur le Play Store",
-    etaAndroidDate: "Prévu : 23–24 janvier",
+    etaAndroidStatus: "Disponible maintenant",
+    etaAndroidDate: "Publié : 27 janvier 2026",
     etaAndroidMarkets: "Dans le monde entier",
     etaIos: "iOS/Apple",
     etaIosStatus: "Disponible maintenant",
@@ -478,7 +478,7 @@ export const translations = {
     pageTitle: "UdenUSA - Encuentra alternativas a productos estadounidenses",
 
     // Banner
-    bannerText: "🎉 ¡La web app ya está disponible! Usa UdenUSA en todos tus dispositivos directamente en tu navegador",
+    bannerText: "🎉 ¡La app de Android ya está disponible! Descarga UdenUSA en Play Store",
     bannerButton: "Probar ahora",
 
     // Header
@@ -490,7 +490,7 @@ export const translations = {
     ctaStatusButton: "Ver",
     ctaStatusButtonEnd: "estado",
     qrCode: "Escanea el código QR para descargar la app",
-    appAvailability: "Disponible en iPhone – Android llega pronto",
+    appAvailability: "Disponible en iOS, Android y web",
 
     // Social media
     socialMediaHeading: "Síguenos en redes sociales",
@@ -574,8 +574,8 @@ export const translations = {
     etaWebDate: "Publicado: 25 de enero de 2026",
     etaWebMarkets: "En todo el mundo",
     etaAndroid: "Android / Google Play",
-    etaAndroidStatus: "En revisión en Play Store",
-    etaAndroidDate: "Previsto: 23–24 de enero",
+    etaAndroidStatus: "Disponible ahora",
+    etaAndroidDate: "Publicado: 27 de enero de 2026",
     etaAndroidMarkets: "En todo el mundo",
     etaIos: "iOS/Apple",
     etaIosStatus: "Disponible ahora",

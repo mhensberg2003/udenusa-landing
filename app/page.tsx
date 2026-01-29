@@ -290,7 +290,7 @@ export default function Home() {
             name: 'UdenUSA',
             description:
               'UdenUSA hjælper dig med at identificere amerikanske produkter og finder alternativer fra resten af verden.',
-            operatingSystem: 'iOS',
+            operatingSystem: ['iOS', 'Android', 'Web'],
             applicationCategory: 'ShoppingApplication',
             offers: {
               '@type': 'Offer',
