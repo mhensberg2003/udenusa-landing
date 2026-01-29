@@ -179,11 +179,7 @@ export default function Home() {
         <p className="tagline">{t.tagline}</p>
         <p className="description">{t.description}</p>
         <div className="cta-buttons">
-          <a
-            href="https://apps.apple.com/app/id6742805777"
-            className="cta"
-            id="downloadButton"
-          >
+          <a href="/app" className="cta" id="downloadButton">
             {t.ctaButton}
           </a>
           <a
