@@ -98,8 +98,8 @@ export const translations = {
     etaAndroidMarkets: "Hele verden",
 
     // Newsletter
-    newsletterTitle: "Venteliste til Android & nye funktioner",
-    newsletterDescription: "Få besked når Android-versionen af UdenUSA lanceres, når nye lande understøttes og lignende vigtigte opdateringer",
+    newsletterTitle: "Modtag Nyheder, Features & Præmier",
+    newsletterDescription: "Få besked om nye funktioner, vigtige opdateringer og giveaways fra UdenUSA sammen med 2.000+ andre tilmeldte.",
     newsletterPlaceholder: "John@email.dk",
     newsletterButton: "Tilmeld",
     newsletterDisclaimer: "Vi sender kun relevante opdateringer. Ingen spam.",
@@ -210,8 +210,8 @@ export const translations = {
     etaAndroidMarkets: "Worldwide",
 
     // Newsletter
-    newsletterTitle: "Waitlist for Android & new features",
-    newsletterDescription: "Get notified when the Android version of UdenUSA launches, when new countries are supported, and similar important updates",
+    newsletterTitle: "Receive News, Features & Prizes",
+    newsletterDescription: "Get notified about new features, important updates, and giveaways from UdenUSA along with 2,000+ other subscribers.",
     newsletterPlaceholder: "john@email.com",
     newsletterButton: "Subscribe",
     newsletterDisclaimer: "We only send relevant updates. No spam.",
@@ -333,9 +333,9 @@ export const translations = {
     etaIosMarkets: "Weltweit",
 
     // Newsletter
-    newsletterTitle: "Warteliste für Android & neue Funktionen",
+    newsletterTitle: "Erhalte News, Features & Preise",
     newsletterDescription:
-      "Erhalte eine Benachrichtigung, wenn die Android-Version von UdenUSA startet, wenn neue Länder unterstützt werden und ähnliche wichtige Updates",
+      "Erhalte Benachrichtigungen über neue Funktionen, wichtige Updates und Giveaways von UdenUSA zusammen mit 2.000+ anderen Abonnenten.",
     newsletterPlaceholder: "john@email.de",
     newsletterButton: "Anmelden",
     newsletterDisclaimer: "Wir senden nur relevante Updates. Kein Spam.",
@@ -458,9 +458,9 @@ export const translations = {
     etaIosMarkets: "Dans le monde entier",
 
     // Newsletter
-    newsletterTitle: "Liste d'attente Android & nouveautés",
+    newsletterTitle: "Reçois les Actus, Fonctionnalités & Cadeaux",
     newsletterDescription:
-      "Reçois une notification quand la version Android de UdenUSA sort, quand de nouveaux pays sont pris en charge, et pour d'autres mises à jour importantes",
+      "Reçois des notifications sur les nouvelles fonctionnalités, les mises à jour importantes et les cadeaux de UdenUSA avec 2 000+ autres abonnés.",
     newsletterPlaceholder: "ton@email.fr",
     newsletterButton: "S'inscrire",
     newsletterDisclaimer: "On n'envoie que des mises à jour utiles. Zéro spam.",
@@ -583,9 +583,9 @@ export const translations = {
     etaIosMarkets: "En todo el mundo",
 
     // Newsletter
-    newsletterTitle: "Lista de espera para Android y nuevas funciones",
+    newsletterTitle: "Recibe Noticias, Funciones y Premios",
     newsletterDescription:
-      "Recibe un aviso cuando salga la versión Android de UdenUSA, cuando se añadan nuevos países y otras actualizaciones importantes",
+      "Recibe notificaciones sobre nuevas funciones, actualizaciones importantes y sorteos de UdenUSA junto con más de 2.000 suscriptores.",
     newsletterPlaceholder: "tu@email.com",
     newsletterButton: "Suscribirme",
     newsletterDisclaimer: "Solo enviamos actualizaciones relevantes. Nada de spam.",
