@@ -43,6 +43,20 @@ export default function AppETA() {
       <h2 className="eta-title">{t.etaTitle}</h2>
       <div className="eta-grid">
         <a
+          href="https://play.google.com/store/apps/details?id=dk.vocatastudio.UdenUSA"
+          className="eta-card eta-card-live eta-card-link"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="eta-platform">
+            <AndroidIcon />
+            {t.etaAndroid}
+          </div>
+          <div className="eta-status">{t.etaAndroidStatus}</div>
+          <div className="eta-date">{t.etaAndroidDate}</div>
+          <div className="eta-markets">{t.etaAndroidMarkets}</div>
+        </a>
+        <a
           href="https://app.udenusa.dk"
           className="eta-card eta-card-live eta-card-link"
           target="_blank"
@@ -69,20 +83,6 @@ export default function AppETA() {
           <div className="eta-status">{t.etaIosStatus}</div>
           <div className="eta-date">{t.etaIosDate}</div>
           <div className="eta-markets">{t.etaIosMarkets}</div>
-        </a>
-        <a
-          href="https://play.google.com/store/apps/details?id=dk.vocatastudio.UdenUSA"
-          className="eta-card eta-card-live eta-card-link"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className="eta-platform">
-            <AndroidIcon />
-            {t.etaAndroid}
-          </div>
-          <div className="eta-status">{t.etaAndroidStatus}</div>
-          <div className="eta-date">{t.etaAndroidDate}</div>
-          <div className="eta-markets">{t.etaAndroidMarkets}</div>
         </a>
       </div>
     </section>

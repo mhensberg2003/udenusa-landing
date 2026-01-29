@@ -14,8 +14,8 @@ export default function QRModal({ isOpen, onClose }: QRModalProps) {
     <div className="qr-modal open" onClick={onClose}>
       <div className="qr-modal-content" onClick={(e) => e.stopPropagation()}>
         <Image
-          src="/images/qr-code-udenusa.png"
-          alt="UdenUSA App Store QR Code"
+          src="/images/universal-download-qr-code.png"
+          alt="UdenUSA Universal Download QR Code"
           width={300}
           height={300}
           className="qr-code-img-expanded"

@@ -194,7 +194,7 @@ export default function Home() {
         <p className="app-availability">{t.appAvailability}</p>
         <div className="qr-code">
           <Image
-            src="/images/qr-code-udenusa.png"
+            src="/images/universal-download-qr-code.png"
             alt="UdenUSA App Store QR Code"
             width={180}
             height={180}
