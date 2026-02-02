@@ -179,7 +179,7 @@ export default function Home() {
         <p className="tagline">{t.tagline}</p>
         <p className="description">{t.description}</p>
         <div className="cta-buttons">
-          <a href="/app" className="cta" id="downloadButton">
+          <a href="/download" className="cta" id="downloadButton">
             {t.ctaButton}
           </a>
           <a
@@ -194,7 +194,7 @@ export default function Home() {
         <p className="app-availability">{t.appAvailability}</p>
         <div className="qr-code">
           <Image
-            src="/images/universal-download-qr-code.png"
+            src="/images/universal-download-qr-code-v2.png"
             alt="UdenUSA App Store QR Code"
             width={180}
             height={180}

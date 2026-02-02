@@ -14,7 +14,7 @@ export default function QRModal({ isOpen, onClose }: QRModalProps) {
     <div className="qr-modal open" onClick={onClose}>
       <div className="qr-modal-content" onClick={(e) => e.stopPropagation()}>
         <Image
-          src="/images/universal-download-qr-code.png"
+          src="/images/universal-download-qr-code-v2.png"
           alt="UdenUSA Universal Download QR Code"
           width={300}
           height={300}
