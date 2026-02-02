@@ -22,7 +22,7 @@ type LanguageContextType = {
 
 const LanguageContext = createContext<LanguageContextType | null>(null);
 
-const DEFAULT_LANGUAGE: Language = 'da';
+const DEFAULT_LANGUAGE: Language = 'en';
 
 function isLanguage(value: string): value is Language {
   return Object.prototype.hasOwnProperty.call(translations, value);
