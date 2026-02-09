@@ -65,6 +65,20 @@ export default function Home() {
       height: 80,
     },
     {
+      src: '/images/press-logos/new-york-times-logo-png_seeklogo-390509.png',
+      alt: 'The New York Times',
+      href: 'https://www.nytimes.com/2026/02/03/world/europe/denmark-trump-boycott.html?unlocked_article_code=1.JVA.USJC.JRbBVBHrHUNs&smid=url-share',
+      width: 240,
+      height: 80,
+    },
+    {
+      src: '/images/press-logos/Associated_Press_logo_2012.png',
+      alt: 'Associated Press',
+      href: 'https://apnews.com/article/denmark-greenland-trump-boycott-apps-93071df9a5b8aec8116c37730d175a46',
+      width: 240,
+      height: 80,
+    },
+    {
       src: '/images/press-logos/press-logos-batch2/dr-logo.png',
       alt: 'DR',
       href: 'https://www.dr.dk/nyheder/indland/apps-der-kan-frasortere-amerikanske-varer-stryger-til-tops',
