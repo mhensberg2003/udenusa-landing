@@ -1,47 +1,60 @@
 'use client';
 
+import { useState, useRef, useEffect } from 'react';
 import { useLanguage } from '@/lib/LanguageContext';
 import { Language } from '@/lib/translations';
 
+const languages: { code: Language; label: string; flag: string }[] = [
+  { code: 'da', label: 'Dansk', flag: '🇩🇰' },
+  { code: 'en', label: 'English', flag: '🇬🇧' },
+  { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
+  { code: 'fr', label: 'Français', flag: '🇫🇷' },
+  { code: 'es', label: 'Español', flag: '🇪🇸' },
+];
+
 export default function LanguageSwitcher() {
   const { language, setLanguage } = useLanguage();
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
 
-  const handleLanguageChange = (lang: Language) => {
-    setLanguage(lang);
-  };
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const active = languages.find((l) => l.code === language)!;
+  const others = languages.filter((l) => l.code !== language);
 
   return (
-    <div className="language-switcher">
+    <div
+      className={`language-switcher${open ? ' open' : ''}`}
+      ref={ref}
+    >
       <button
-        className={`lang-btn ${language === 'da' ? 'active' : ''}`}
-        onClick={() => handleLanguageChange('da')}
+        className="lang-btn active"
+        onClick={() => setOpen(!open)}
       >
-        🇩🇰 Dansk
+        {active.flag} {active.label}
       </button>
-      <button
-        className={`lang-btn ${language === 'en' ? 'active' : ''}`}
-        onClick={() => handleLanguageChange('en')}
-      >
-        🇬🇧 English
-      </button>
-      <button
-        className={`lang-btn ${language === 'de' ? 'active' : ''}`}
-        onClick={() => handleLanguageChange('de')}
-      >
-        🇩🇪 Deutsch
-      </button>
-      <button
-        className={`lang-btn ${language === 'fr' ? 'active' : ''}`}
-        onClick={() => handleLanguageChange('fr')}
-      >
-        🇫🇷 Français
-      </button>
-      <button
-        className={`lang-btn ${language === 'es' ? 'active' : ''}`}
-        onClick={() => handleLanguageChange('es')}
-      >
-        🇪🇸 Español
-      </button>
+      <div className="lang-dropdown">
+        {others.map((lang, i) => (
+          <button
+            key={lang.code}
+            className={`lang-btn${i === others.length - 1 ? ' last' : ''}`}
+            onClick={() => {
+              setLanguage(lang.code);
+              setOpen(false);
+            }}
+          >
+            {lang.flag} {lang.label}
+          </button>
+        ))}
+      </div>
     </div>
   );
 }

@@ -161,9 +161,8 @@ export default function Home() {
         </div>
       </div>
 
-      <LanguageSwitcher />
-
       <header>
+        <LanguageSwitcher />
         <div className="app-screenshots">
           <Image
             src="/images/screenshot-american-phonmockup.png"
@@ -203,6 +202,36 @@ export default function Home() {
             rel="noreferrer"
           >
             {t.ctaWebButton}
+          </a>
+        </div>
+        <div className="store-badges">
+          <a
+            href="https://play.google.com/store/apps/details?id=dk.vocatastudio.UdenUSA"
+            className="store-badge"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image
+              src="/images/download-on-images/get-it-on-google-play-badge-seeklogo.png"
+              alt="Get it on Google Play"
+              width={180}
+              height={54}
+              className="store-badge-img"
+            />
+          </a>
+          <a
+            href="https://apps.apple.com/dk/app/nonusa/id6742805777"
+            className="store-badge"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image
+              src="/images/download-on-images/download-on-the-app-store-flat-badge-seeklogo.png"
+              alt="Download on the App Store"
+              width={180}
+              height={54}
+              className="store-badge-img"
+            />
           </a>
         </div>
         <p className="app-availability">{t.appAvailability}</p>
